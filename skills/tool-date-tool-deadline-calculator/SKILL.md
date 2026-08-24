@@ -8,7 +8,7 @@ metadata: " id: tool.date-tool-deadline-calculator category: tool jurisdictions:
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'tool'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

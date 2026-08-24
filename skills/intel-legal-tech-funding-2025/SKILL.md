@@ -8,7 +8,7 @@ metadata: " id: intel.legal-tech-funding-2025 category: intel jurisdictions: [__
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'intel'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

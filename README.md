@@ -1,21 +1,34 @@
 # hermes-the-firm
 
-A complete legal practice for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — **1,147 skills across three layers**, one opt-in entry point, zero session-start cost.
+A complete legal practice for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — **1,155 skills across five layers**, one opt-in entry point, zero session-start cost.
 
 ```
-DEPARTMENTS      12 practice areas (from anthropics/claude-for-legal)
-FIRM ADMIN       how the firm runs AI   (from HAQQ master-claude-for-legal)
+DEPARTMENTS      12 practice areas        anthropics/claude-for-legal
+FEDERAL RESEARCH live MCP connectors      beshkenadze/us-legal-tools
+CORPUS           US primary law on disk   Vaquill/open-us-law
+FIRM ADMIN       how the firm runs AI     HAQQ master-claude-for-legal
 LOUIS LIBRARY    982 deep-knowledge skills, MENA-first
-                 (from HAQQ mini-claude-for-legal)
+                                          HAQQ mini-claude-for-legal
 ```
 
-Ported from three upstreams:
+Ported from four upstreams:
 
 | Source | License | What it contributes |
 |---|---|---|
 | [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) | Apache-2.0 | 12 practice-area departments + watcher agents + practice-profile system |
+| [beshkenadze/us-legal-tools](https://github.com/beshkenadze/us-legal-tools) | MIT | Federal MCP layer: eCFR, Federal Register, CourtListener (case law), govinfo — wiring skills + catalog |
+| [Vaquill/open-us-law](https://github.com/vaquill/open-us-law) | CC BY 4.0 (data) | The corpus: ~3M sections of US statutes/constitutions/court rules; coverage manifest drives the skills' honesty about what's verified |
 | [HAQQ Legal AI / master-claude-for-legal](https://github.com/haqq-ai/master-claude-for-legal) | MIT | AI governance skills, privilege-layer reference docs, firm AI policy / client data explainer / vendor security templates |
 | [HAQQ Legal AI / mini-claude-for-legal](https://github.com/haqq-ai/mini-claude-for-legal) | MIT | The Louis library: drafting, review, litigation simulation, education, safety, personas, connectors — Lebanon/KSA/UAE/Egypt/DIFC/ADGM first, FR/UK/US/EU secondary |
+
+## How the layers work together
+
+A Michigan workers'-comp question routes like this: the department skills
+frame it against the firm's playbook, `us-statute-lookup` pulls MCL 418's
+actual text from the local corpus (Michigan ships complete and human-
+verified), `federal-courtlistener-setup` adds case law when wired,
+`us-citation-verify` round-trips every cite before anything is filed.
+Primary law on disk, live federal data on tap, case law via connector.
 
 ## The name
 
@@ -55,14 +68,16 @@ Restart your session (or `hermes gateway restart`).
 ## Usage
 
 ```text
-/hermes-the-firm                       roster: departments + admin + library
+/hermes-the-firm                       roster: departments + connectors + corpus + library
 /hermes-the-firm litigation            one department's skills
+/hermes-the-firm federal-mcp           federal research connector wiring
 /hermes-the-firm firm-admin            AI governance layer
+/hermes-the-firm primary-law           US statute lookup / citation verify
 /hermes-the-firm louis                 Louis categories overview
 /hermes-the-firm louis draft           one category (102 drafting skills)
 
 skill_view("hermes-the-firm:nda-review")             direct load
-skill_view("hermes-the-firm:draft-agency-agreement") Louis skill
+skill_view("hermes-the-firm:us-statute-lookup")      corpus search
 ```
 
 First run in a department: load its `<prefix>-cold-start-interview`.
@@ -89,13 +104,15 @@ Notable converter fixes applied on port:
 ## Verification status
 
 - `pytest tests/` — 12 leak/structure/source tests green
-- Herminator validation — 1,147/1,147 SKILL.md valid
-- Real `PluginManager` load — 1,147 skills + `/hermes-the-firm` command
-  registered; namespaced resolution confirmed across all three layers
+- Herminator validation — 1,155/1,155 SKILL.md valid
+- Real `PluginManager` load — 1,155 skills + `/hermes-the-firm` command
+  registered; namespaced resolution confirmed across all five layers
 
 ## Attribution
 
 - Practice departments: Anthropic (claude-for-legal), Apache-2.0
+- Federal MCP wiring: beshkenadze (us-legal-tools), MIT
+- US law corpus data: Vaquill (open-us-law), CC BY 4.0
 - Firm admin + Louis library: HAQQ Legal AI, MIT
 - Port: rJ9, following the hermes-superpowers port conventions.
   See LICENSE and THIRD-PARTY-NOTICES.md.

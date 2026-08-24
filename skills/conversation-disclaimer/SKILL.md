@@ -8,7 +8,7 @@ metadata: " id: conversation.disclaimer category: conversation priority: P0 inte
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'conversation'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

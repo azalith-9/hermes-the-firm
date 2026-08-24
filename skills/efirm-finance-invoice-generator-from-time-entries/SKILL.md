@@ -8,7 +8,7 @@ metadata: " id: efirm-finance.invoice-generator-from-time-entries category: efir
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'efirm-finance'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

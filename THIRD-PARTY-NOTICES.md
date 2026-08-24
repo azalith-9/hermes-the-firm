@@ -32,3 +32,23 @@ projects. Each skill carries an HTML port note naming its provenance;
 - Contributes: 982 deep-knowledge skills across 47 categories with a
   MENA-first jurisdictional lens.
 - Owner-map values: `louis/<category>`.
+
+## beshkenadze — us-legal-tools
+
+- Source: https://github.com/beshkenadze/us-legal-tools
+- License: MIT
+- Contributes: the federal MCP layer. Skills generated here carry wiring
+  instructions for that project's MCP servers (`@us-legal-tools/*-sdk/mcp`);
+  the servers themselves run from npm at use time, not from this repo.
+- Owner-map value: `federal-mcp`.
+
+## Vaquill — open-us-law
+
+- Source: https://github.com/vaquill/open-us-law; dataset at
+  https://huggingface.co/datasets/vaquill/open-us-law
+- License: code per upstream repo; **data CC BY 4.0**
+- Contributes: `references/us-law-coverage.json` (generated from the
+  project's audited coverage manifest) and four primary-law skills.
+  The corpus itself is multi-GB and stays external — install separately
+  (see the `us-statute-lookup` skill); nothing corpus-sized is bundled.
+- Owner-map value: `primary-law`.

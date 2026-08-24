@@ -8,7 +8,7 @@ metadata: " id: kb.fintech-licensing-ADGM category: kb practice_area: Financial 
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'kb'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

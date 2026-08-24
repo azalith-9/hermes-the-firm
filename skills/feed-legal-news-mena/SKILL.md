@@ -8,7 +8,7 @@ metadata: " id: feed.legal-news-MENA category: feed jurisdictions: [UAE, KSA, LB
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'feed'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

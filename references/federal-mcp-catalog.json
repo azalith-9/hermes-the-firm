@@ -1,0 +1,30 @@
+[
+  {
+    "server": "ecfr",
+    "npm_package": "@us-legal-tools/ecfr-sdk/mcp",
+    "covers": "Electronic Code of Federal Regulations \u2014 the current federal regulations, searchable and section-addressable",
+    "env_required": {}
+  },
+  {
+    "server": "federal-register",
+    "npm_package": "@us-legal-tools/federal-register-sdk/mcp",
+    "covers": "Federal Register \u2014 proposed rules, final rules, notices and presidential documents as they publish",
+    "env_required": {}
+  },
+  {
+    "server": "courtlistener",
+    "npm_package": "@us-legal-tools/courtlistener-sdk/mcp",
+    "covers": "CourtListener \u2014 US case law, dockets, and citations (the case-law layer the local corpus does NOT carry)",
+    "env_required": {
+      "COURTLISTENER_API_TOKEN": "<your-token>"
+    }
+  },
+  {
+    "server": "govinfo",
+    "npm_package": "@us-legal-tools/govinfo-sdk/mcp",
+    "covers": "govinfo \u2014 official primary documents: US Code, Statutes at Large, CFR, Federal Register, congressional material",
+    "env_required": {
+      "GOVINFO_API_KEY": "<YOUR_API_KEY>"
+    }
+  }
+]

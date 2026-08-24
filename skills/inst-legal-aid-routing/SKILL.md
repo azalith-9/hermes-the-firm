@@ -8,7 +8,7 @@ metadata: " id: inst.legal-aid-routing category: inst jurisdictions: [KSA, UAE, 
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'inst'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

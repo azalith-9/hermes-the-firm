@@ -2,3 +2,4 @@ tools_dev/
 __pycache__/
 .pytest_cache/
 *.pyc
+LINKEDIN-PROJECT-DRAFT.md

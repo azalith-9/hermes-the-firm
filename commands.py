@@ -38,6 +38,9 @@ PRACTICE_AREAS = [
     "legal-builder-hub",
 ]
 
+# Non-department layers with their own roster sections.
+SPECIAL_AREAS = ["federal-mcp", "firm-admin", "primary-law"]
+
 _HERE = Path(__file__).parent
 _SKILLS_DIR = _HERE / "skills"
 _OWNER_MAP_PATH = _HERE / "references" / "owner-map.json"
@@ -91,18 +94,25 @@ def _roster(owners: dict) -> str:
     lines = [
         "hermes-the-firm — a complete legal practice on Hermes.",
         "",
-        f"  {total} skills across three layers:",
+        f"  {total} skills across five layers:",
         "",
         "DEPARTMENTS (practice law; each has a cold-start interview)",
     ]
     for area in PRACTICE_AREAS:
         n = len(_skills_for(area, owners))
         lines.append(f"  {area:<24} {n:>3} skills")
+    fmcp = len(_skills_for("federal-mcp", owners))
+    fa = len(_skills_for("firm-admin", owners))
+    pl = len(_skills_for("primary-law", owners))
     lines += [
-        f"  firm-admin               {len(_skills_for('firm-admin', owners)):>3} skills"
-        "   <- how the firm runs AI (policy, privilege, vendors)",
         "",
-        "THE LOUIS LIBRARY (982 deep-knowledge skills, MENA-first lens)",
+        "FEDERAL RESEARCH (live MCP connectors — eCFR, Fed Register,",
+        f"  federal-mcp               {fmcp:>3} skills   case law via CourtListener, govinfo docs)",
+        f"  firm-admin               {fa:>3} skills   <- how the firm runs AI (policy, privilege, vendors)",
+        "CORPUS (US primary law on disk)",
+        f"  primary-law              {pl:>3} skills   <- search the actual statutes (open-us-law)",
+        "",
+        "THE LOUIS LIBRARY (deep-knowledge skills, MENA-first lens)",
     ]
     cats = _louis_categories(owners)
     row = []
@@ -184,6 +194,49 @@ def handle_entry(raw: str) -> str:
             ]
             return "\n".join(lines)
 
+        if arg == "federal-mcp":
+            skills = _skills_for("federal-mcp", owners)
+            if not skills:
+                return ("federal-mcp is empty (us-legal-tools not present "
+                        "at port time — see UPSTREAM.md)")
+            lines = [
+                "federal-mcp — live federal research connectors.",
+                "",
+                "Skills (each wires one MCP server via `hermes mcp`):",
+            ]
+            for s in skills:
+                lines.append(f'  skill_view("hermes-the-firm:{s}")')
+            lines += [
+                "",
+                "Server catalog: references/federal-mcp-catalog.json",
+                "ecfr + federal-register run keyless; courtlistener wants a",
+                "free token; govinfo needs an api.data.gov key.",
+                "Configured is not connected — probe one real call each.",
+            ]
+            return "\n".join(lines)
+
+        if arg == "primary-law":
+            skills = _skills_for("primary-law", owners)
+            if not skills:
+                return ("primary-law is empty (open-us-law not present "
+                        "at port time — see UPSTREAM.md)")
+            lines = [
+                "primary-law — US primary law via the open-us-law corpus.",
+                "",
+                "Skills:",
+            ]
+            for s in skills:
+                lines.append(f'  skill_view("hermes-the-firm:{s}")')
+            lines += [
+                "",
+                "The corpus itself is multi-GB and NOT bundled. Skills read",
+                "$OPEN_US_LAW_DIR or ~/data/open-us-law/; coverage claims",
+                "(per-state completeness) live in",
+                "  references/us-law-coverage.json",
+                "Data: Vaquill's open-us-law (CC BY 4.0), quarterly snapshots.",
+            ]
+            return "\n".join(lines)
+
         if arg in PRACTICE_AREAS:
             skills = _skills_for(arg, owners)
             if not skills:
@@ -202,7 +255,7 @@ def handle_entry(raw: str) -> str:
             ]
             return "\n".join(lines)
 
-        known = ", ".join(PRACTICE_AREAS + ["firm-admin", "louis"])
+        known = ", ".join(PRACTICE_AREAS + SPECIAL_AREAS + ["louis"])
         return (f"unknown area {raw.strip()!r}. areas:\n{known}\n"
                 f"(or: louis <category>)")
     except Exception as e:  # never break the session over a listing

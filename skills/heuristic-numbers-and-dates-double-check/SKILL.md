@@ -8,7 +8,7 @@ metadata: " id: heuristic.numbers-and-dates-double-check category: heuristic pri
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'heuristic'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

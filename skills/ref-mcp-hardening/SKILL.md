@@ -8,7 +8,7 @@ metadata: " id: ref.mcp-hardening category: ref priority: P1 intent: [__ref__, m
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'ref'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

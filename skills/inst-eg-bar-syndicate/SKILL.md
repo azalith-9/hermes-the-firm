@@ -8,7 +8,7 @@ metadata: " id: inst.EG-bar-syndicate category: inst jurisdictions: [EG] priorit
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'inst'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

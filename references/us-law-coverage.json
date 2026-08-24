@@ -1,0 +1,479 @@
+{
+  "ak": {
+    "citation_scheme": "AS title.chapter.section (e.g. 11.41.100) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Alaska",
+    "official_source": "https://www.akleg.gov/basis/statutes.asp",
+    "section_count": 17935
+  },
+  "al": {
+    "citation_scheme": "title-chapter-section (e.g. 13A-6-2) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Alabama",
+    "official_source": "https://alison.legislature.state.al.us/code-of-alabama",
+    "section_count": 45984
+  },
+  "ar": {
+    "citation_scheme": "ACA title-chapter-section (e.g. 5-4-401) - deterministic on the cite",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Arkansas",
+    "official_source": "state-provided free public access portal",
+    "section_count": 36936
+  },
+  "az": {
+    "citation_scheme": "title-section (e.g. 13-1105) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Arizona",
+    "official_source": "https://www.azleg.gov/arstitle/",
+    "section_count": 22674
+  },
+  "ca": {
+    "citation_scheme": "code + section (e.g. Lab. Code 1194) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "California",
+    "official_source": "https://leginfo.legislature.ca.gov/faces/codes.xhtml",
+    "section_count": 161429
+  },
+  "co": {
+    "citation_scheme": "title-article-section (e.g. 18-3-102) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Colorado",
+    "official_source": "https://leg.colorado.gov/colorado-revised-statutes",
+    "section_count": 34231
+  },
+  "ct": {
+    "citation_scheme": "title-section (e.g. 53a-54a) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Connecticut",
+    "official_source": "https://www.cga.ct.gov/current/pub/titles.htm",
+    "section_count": 16082
+  },
+  "dc": {
+    "citation_scheme": "title-section (e.g. 51-127) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "District of Columbia",
+    "official_source": "https://code.dccouncil.gov/us/dc/council/code",
+    "section_count": 23694
+  },
+  "de": {
+    "citation_scheme": "title + section (e.g. 8 Del. C. 102) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Delaware",
+    "official_source": "https://delcode.delaware.gov/",
+    "section_count": 21649
+  },
+  "federal": {
+    "citation_scheme": "USC title-section; CFR title-part-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Federal (USC + CFR)",
+    "official_source": "https://uscode.house.gov , https://www.ecfr.gov , https://www.federalregister.gov",
+    "section_count": 274600
+  },
+  "fl": {
+    "citation_scheme": "chapter.section (e.g. 316.193) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Florida",
+    "official_source": "https://www.leg.state.fl.us/statutes/",
+    "section_count": 24866
+  },
+  "ga": {
+    "citation_scheme": "title-chapter-section (e.g. 16-5-1) - deterministic",
+    "coverage_status": "withdrawn",
+    "coverage_verified": false,
+    "dump_ready": false,
+    "name": "Georgia",
+    "official_source": "https://www.legis.ga.gov/ (O.C.G.A.)",
+    "section_count": 0
+  },
+  "hi": {
+    "citation_scheme": "chapter-section (e.g. 706-660) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Hawaii",
+    "official_source": "https://www.capitol.hawaii.gov/hrsall/",
+    "section_count": 16446
+  },
+  "ia": {
+    "citation_scheme": "chapter.section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Iowa",
+    "official_source": "https://www.legis.iowa.gov/law/iowaCode",
+    "section_count": 28223
+  },
+  "id": {
+    "citation_scheme": "title-chapter-section (e.g. 18-4003) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Idaho",
+    "official_source": "https://legislature.idaho.gov/statutesrules/idstat/",
+    "section_count": 22754
+  },
+  "il": {
+    "citation_scheme": "chapter ILCS act/section (e.g. 720 ILCS 5/9-1) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Illinois",
+    "official_source": "https://www.ilga.gov/legislation/ilcs/ilcs.asp",
+    "section_count": 72456
+  },
+  "in": {
+    "citation_scheme": "title-article-chapter-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Indiana",
+    "official_source": "https://iga.in.gov/laws/current/ic",
+    "section_count": 83148
+  },
+  "ks": {
+    "citation_scheme": "chapter-article-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Kansas",
+    "official_source": "https://www.ksrevisor.gov/ksa.html",
+    "section_count": 24361
+  },
+  "ky": {
+    "citation_scheme": "KRS chapter.section (cite deterministic; page id is not)",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Kentucky",
+    "official_source": "https://apps.legislature.ky.gov/law/statutes/",
+    "section_count": 20894
+  },
+  "la": {
+    "citation_scheme": "RS title:section + per-code article - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Louisiana",
+    "official_source": "https://legis.la.gov/legis/LawsContents.aspx",
+    "section_count": 43474
+  },
+  "ma": {
+    "citation_scheme": "chapter section (e.g. c.276 s.2) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Massachusetts",
+    "official_source": "https://malegislature.gov/Laws/GeneralLaws",
+    "section_count": 23152
+  },
+  "md": {
+    "citation_scheme": "article + section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Maryland",
+    "official_source": "https://mgaleg.maryland.gov/mgawebsite/laws/statutes",
+    "section_count": 39552
+  },
+  "me": {
+    "citation_scheme": "title-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Maine",
+    "official_source": "https://legislature.maine.gov/statutes/",
+    "section_count": 25316
+  },
+  "mi": {
+    "citation_scheme": "act.section (e.g. 750.316) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Michigan",
+    "official_source": "https://www.legislature.mi.gov/Laws/ChapterIndex",
+    "section_count": 40658
+  },
+  "mn": {
+    "citation_scheme": "chapter.section (e.g. 216B.164) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Minnesota",
+    "official_source": "https://www.revisor.mn.gov/statutes/",
+    "section_count": 27747
+  },
+  "mo": {
+    "citation_scheme": "chapter.section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Missouri",
+    "official_source": "https://revisor.mo.gov/main/Home.aspx",
+    "section_count": 29296
+  },
+  "ms": {
+    "citation_scheme": "title-chapter-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Mississippi",
+    "official_source": "https://legislature.ms.gov/",
+    "section_count": 158688
+  },
+  "mt": {
+    "citation_scheme": "title-chapter-part-section (e.g. 45-5-102) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Montana",
+    "official_source": "https://mca.legmt.gov/bills/mca/index.html",
+    "section_count": 30514
+  },
+  "nc": {
+    "citation_scheme": "chapter-section (e.g. 14-17) - deterministic",
+    "coverage_status": "withdrawn",
+    "coverage_verified": false,
+    "dump_ready": false,
+    "name": "North Carolina",
+    "official_source": "https://www.ncleg.gov/Laws/GeneralStatutesTOC",
+    "section_count": 0
+  },
+  "nd": {
+    "citation_scheme": "title-chapter-section (e.g. 12.1-16-01) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "North Dakota",
+    "official_source": "https://ndlegis.gov/cencode/",
+    "section_count": 29042
+  },
+  "ne": {
+    "citation_scheme": "chapter-section (e.g. 30-2201) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Nebraska",
+    "official_source": "https://nebraskalegislature.gov/laws/browse-statutes.php",
+    "section_count": 25997
+  },
+  "nh": {
+    "citation_scheme": "chapter:section (RSA) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "New Hampshire",
+    "official_source": "https://www.gc.nh.gov/rsa/html/nhtoc.htm",
+    "section_count": 25375
+  },
+  "nj": {
+    "citation_scheme": "title:chapter-section (NJSA) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "New Jersey",
+    "official_source": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes",
+    "section_count": 55897
+  },
+  "nm": {
+    "citation_scheme": "chapter-article-section (e.g. 30-3-2 NMSA) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "New Mexico",
+    "official_source": "https://nmonesource.com/",
+    "section_count": 34455
+  },
+  "nv": {
+    "citation_scheme": "chapter.section (e.g. 200.010) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Nevada",
+    "official_source": "https://www.leg.state.nv.us/NRS/",
+    "section_count": 48190
+  },
+  "ny": {
+    "citation_scheme": "law-id + section (e.g. TAX 606) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "New York",
+    "official_source": "https://www.nysenate.gov/legislation/laws/CONSOLIDATED",
+    "section_count": 40102
+  },
+  "oh": {
+    "citation_scheme": "title.section (e.g. 2903.01) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Ohio",
+    "official_source": "https://codes.ohio.gov/ohio-revised-code",
+    "section_count": 33161
+  },
+  "ok": {
+    "citation_scheme": "title O.S. section (e.g. 21 O.S. 701.7) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Oklahoma",
+    "official_source": "https://www.oklegislature.gov/osstatuestitle.html",
+    "section_count": 35329
+  },
+  "or": {
+    "citation_scheme": "chapter.section (e.g. 164.055) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Oregon",
+    "official_source": "https://www.oregonlegislature.gov/bills_laws/pages/ors.aspx",
+    "section_count": 36202
+  },
+  "pa": {
+    "citation_scheme": "consolidated title.section deterministic; unconsolidated Act/P.L. numbering non-deterministic",
+    "coverage_status": "partial",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Pennsylvania",
+    "official_source": "https://www.palegis.us/statutes",
+    "section_count": 14547
+  },
+  "pr": {
+    "citation_scheme": "Titulo X seccion Y - deterministic on the cite",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Puerto Rico",
+    "official_source": "https://www.statedepartment.pr.gov/laws-of-puerto-rico",
+    "section_count": 23636
+  },
+  "ri": {
+    "citation_scheme": "title-chapter-section (e.g. 11-1-1) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Rhode Island",
+    "official_source": "https://webserver.rilegislature.gov/statutes/Statutes.html",
+    "section_count": 21107
+  },
+  "sc": {
+    "citation_scheme": "title-chapter-section (e.g. 16-3-20) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "South Carolina",
+    "official_source": "https://www.scstatehouse.gov/code/statmast.php",
+    "section_count": 29947
+  },
+  "sd": {
+    "citation_scheme": "title-chapter-section (e.g. 22-40-1) - deterministic (strongest in the set)",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "South Dakota",
+    "official_source": "https://sdlegislature.gov/Statutes",
+    "section_count": 39589
+  },
+  "tn": {
+    "citation_scheme": "TCA title-chapter-section (e.g. 39-13-202) - deterministic on the cite",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Tennessee",
+    "official_source": "state-provided free public access portal",
+    "section_count": 32693
+  },
+  "tx": {
+    "citation_scheme": "code + section (e.g. Penal 19.02) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Texas",
+    "official_source": "https://statutes.capitol.texas.gov/",
+    "section_count": 122535
+  },
+  "ut": {
+    "citation_scheme": "title-chapter-section (e.g. 63A-16-107) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Utah",
+    "official_source": "https://le.utah.gov/xcode/code.html",
+    "section_count": 25880
+  },
+  "va": {
+    "citation_scheme": "title.chapter-section (e.g. 8.01-271.1) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Virginia",
+    "official_source": "https://law.lis.virginia.gov/vacode/",
+    "section_count": 33856
+  },
+  "vt": {
+    "citation_scheme": "title-chapter-section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Vermont",
+    "official_source": "https://legislature.vermont.gov/statutes/",
+    "section_count": 23521
+  },
+  "wa": {
+    "citation_scheme": "title.chapter.section - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Washington",
+    "official_source": "https://app.leg.wa.gov/rcw/",
+    "section_count": 51498
+  },
+  "wi": {
+    "citation_scheme": "chapter.section (mixed-decimal) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Wisconsin",
+    "official_source": "https://docs.legis.wisconsin.gov/statutes/prefaces/toc",
+    "section_count": 18158
+  },
+  "wv": {
+    "citation_scheme": "chapter-article-section (e.g. 2-2-10) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "West Virginia",
+    "official_source": "https://code.wvlegislature.gov/",
+    "section_count": 25460
+  },
+  "wy": {
+    "citation_scheme": "W.S. title-chapter-section (e.g. 6-2-101) - deterministic",
+    "coverage_status": "complete",
+    "coverage_verified": true,
+    "dump_ready": true,
+    "name": "Wyoming",
+    "official_source": "https://wyoleg.gov/StateStatutes/StatutesConstitution",
+    "section_count": 10219
+  }
+}
