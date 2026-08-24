@@ -1,0 +1,9 @@
+name: hermes-the-firm
+version: 0.2.0
+description: >
+  Hermes-native port rolling three upstreams into one legal practice:
+  anthropics/claude-for-legal (12 practice-area departments, Apache-2.0),
+  HAQQ master-claude-for-legal (firm AI administration, MIT), and HAQQ
+  mini-claude-for-legal (the 982-skill Louis library, MENA-first, MIT).
+  1,147 skills behind one opt-in command. Requires Hermes Agent 0.18.0+.
+author: rJ9 (Hermes port) · upstream content by Anthropic and HAQQ Legal AI
