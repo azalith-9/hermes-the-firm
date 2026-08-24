@@ -8,7 +8,7 @@ metadata: " id: onboarding.B2C-vs-B2B-fork category: onboarding priority: P0 int
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'onboarding'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

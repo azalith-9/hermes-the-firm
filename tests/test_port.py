@@ -148,7 +148,8 @@ def test_merged_leave_tracker_reference_exists():
 
 
 def test_all_sources_represented():
-    """Three upstreams must all land: departments, firm-admin, louis."""
+    """All four upstreams must land: departments, federal-mcp, firm-admin,
+    louis, primary-law."""
     import json
     owners = json.loads((HERE / "references" / "owner-map.json")
                         .read_text(encoding="utf-8"))
@@ -157,7 +158,35 @@ def test_all_sources_represented():
         kinds.add(v.split("/")[0])
     assert "firm-admin" in kinds, "master-claude-for-legal missing"
     assert "louis" in kinds, "mini-claude-for-legal missing"
+    assert "federal-mcp" in kinds, "us-legal-tools missing"
+    assert "primary-law" in kinds, "open-us-law missing"
     assert len([v for v in owners.values() if "/" not in v]) >= 159
+
+
+def test_primarylaw_coverage_data_driven():
+    """us-law-coverage.json must come from the corpus's own manifest and
+    carry the fields the skills rely on (Michigan included)."""
+    import json
+    cov = json.loads((HERE / "references" / "us-law-coverage.json")
+                     .read_text(encoding="utf-8"))
+    assert len(cov) >= 50
+    mi = cov["mi"]
+    assert mi["coverage_status"] == "complete"
+    assert mi["coverage_verified"] is True
+    assert mi["section_count"] > 30000
+
+
+def test_federal_mcp_skills_have_wiring():
+    """Each federal-mcp skill must name its npx package + hermes mcp add."""
+    import json
+    owners = json.loads((HERE / "references" / "owner-map.json")
+                        .read_text(encoding="utf-8"))
+    fed = [n for n, v in owners.items() if v == "federal-mcp"]
+    assert len(fed) == 4
+    for name in fed:
+        text = (SKILLS / name / "SKILL.md").read_text(encoding="utf-8")
+        assert "@us-legal-tools/" in text, f"{name}: no npm package"
+        assert "hermes mcp add" in text, f"{name}: no wiring command"
 
 
 def test_louis_frontmatter_yaml_valid():

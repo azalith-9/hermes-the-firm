@@ -11,10 +11,10 @@ argument-hint: "[no arguments needed — works from the pending proposals file]"
 
 <!--
 HERMES PORT NOTE
-Mechanically ported into hermes-the-firm from anthropics/claude-for-legal (plugin 'commercial-legal', Apache-2.0) for Hermes Agent.
+Mechanically ported into hermes-the-firm from anthropics/claude-for-legal (plugin 'commercial-legal', Apache-2.0) by tools_dev/port_upstream.py.
 Tool names, config paths, and /commercial-legal:{skill} invocations were
 rewritten to Hermes equivalents. Hand adjustments are tracked in
-Regenerated sections are maintained upstream of this repository.
+tools_dev/MANUAL_FIXUPS.md — do not hand-edit regenerated sections.
 -->
 
 

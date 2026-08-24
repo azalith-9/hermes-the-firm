@@ -8,7 +8,7 @@ metadata: " id: tool.UAE-DED category: tool jurisdictions: [UAE] priority: P1 in
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'tool'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

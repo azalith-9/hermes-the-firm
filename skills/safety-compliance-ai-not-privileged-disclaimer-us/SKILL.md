@@ -8,7 +8,7 @@ metadata: " id: safety-compliance.AI-not-privileged-disclaimer-US category: safe
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'safety-compliance'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 

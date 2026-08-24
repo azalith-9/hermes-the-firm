@@ -8,7 +8,7 @@ metadata: " id: safety.bar-rule-5.5-UPL-AI category: safety jurisdictions: [US, 
 <!--
 HERMES PORT NOTE
 Mechanically ported into hermes-the-firm from HAQQ Legal AI's mini-claude-for-legal (MIT, the Louis skill library), category 'safety'.
-Registered as a flat plugin skill.
+Namespaced as louis-<category>-<skill> on registration.
 -->
 
 
