@@ -1,0 +1,332 @@
+{
+  "ai-governance-legal": {
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "commercial-legal": {
+    "Definely": {
+      "description": "Live, deterministic access to contract structure \u2014 resolve definitions, validate cross-references, map dependencies, run structural diffs.",
+      "title": "Definely",
+      "type": "http",
+      "url": "https://mcp.uk.definely.com/api/proxy/core-mcp"
+    },
+    "DocuSign": {
+      "description": "Agreement search, status tracking, and signature workflows.",
+      "title": "DocuSign",
+      "type": "http",
+      "url": "https://mcp.docusign.com/mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Ironclad": {
+      "description": "Search your contract repository and workflows using plain language \u2014 expiring MSAs, termination clauses, vendor agreements \u2014 scoped to your permissions.",
+      "title": "Ironclad",
+      "type": "http",
+      "url": "https://mcp.na1.ironcladapp.com/mcp"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+    "TopCounsel": {
+      "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence.",
+      "title": "TopCounsel",
+      "type": "http",
+      "url": "https://api.techgc.co/api/mcp/topcounsel"
+    },
+    "iManage": {
+      "description": "Governed iManage content connected to Claude \u2014 documents stay in iManage, access is permission-bound and auditable.",
+      "title": "iManage",
+      "type": "http",
+      "url": "https://cloudimanage.com/mcp/work"
+    }
+  },
+  "corporate-legal": {
+    "Box": {
+      "description": "Data room and document management.",
+      "title": "Box",
+      "type": "http",
+      "url": "https://mcp.box.com/mcp"
+    },
+    "Definely": {
+      "description": "Live, deterministic access to contract structure \u2014 resolve definitions, validate cross-references, map dependencies, run structural diffs.",
+      "title": "Definely",
+      "type": "http",
+      "url": "https://mcp.uk.definely.com/api/proxy/core-mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+    "Solve Intelligence": {
+      "description": "Patent workflows \u2014 search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis.",
+      "title": "Solve Intelligence",
+      "type": "http",
+      "url": "https://api.solveintelligence.com/mcp/"
+    },
+    "TopCounsel": {
+      "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence.",
+      "title": "TopCounsel",
+      "type": "http",
+      "url": "https://api.techgc.co/api/mcp/topcounsel"
+    },
+    "iManage": {
+      "description": "Governed iManage content connected to Claude \u2014 documents stay in iManage, access is permission-bound and auditable.",
+      "title": "iManage",
+      "type": "http",
+      "url": "https://cloudimanage.com/mcp/work"
+    }
+  },
+  "employment-legal": {
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "ip-legal": {
+    "CourtListener": {
+      "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification.",
+      "title": "CourtListener",
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/"
+    },
+    "Descrybe": {
+      "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language.",
+      "title": "Descrybe",
+      "type": "http",
+      "url": "https://mcp.descrybe.com/mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+    "Solve Intelligence": {
+      "description": "Patent workflows \u2014 search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis.",
+      "title": "Solve Intelligence",
+      "type": "http",
+      "url": "https://api.solveintelligence.com/mcp/"
+    }
+  },
+  "law-student": {
+    "CourtListener": {
+      "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification.",
+      "title": "CourtListener",
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/"
+    },
+    "Descrybe": {
+      "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language.",
+      "title": "Descrybe",
+      "type": "http",
+      "url": "https://mcp.descrybe.com/mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "legal-builder-hub": {
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Lawve AI": {
+      "description": "Curated library of legal AI skills written by practicing lawyers, in-house counsel, and legal technologists.",
+      "title": "Lawve AI",
+      "type": "http",
+      "url": "https://mcp.lawve.ai/mcp"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "legal-clinic": {
+    "CourtListener": {
+      "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification.",
+      "title": "CourtListener",
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/"
+    },
+    "Courtroom5": {
+      "description": "Courtroom5 \u2014 jurisdiction-aware guidance for self-represented litigants: case intake, deadline calculations, procedural next steps.",
+      "title": "Courtroom5",
+      "type": "http",
+      "url": "https://mcp.courtroom5.com"
+    },
+    "Descrybe": {
+      "description": "Primary law research \u2014 search cases by concept or wording, find cases from citations, extract authorities, check treatment, verify quoted language.",
+      "title": "Descrybe",
+      "type": "http",
+      "url": "https://mcp.descrybe.com/mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "litigation-legal": {
+    "Aurora": {
+      "description": "Read-only Consilio ediscovery \u2014 find matters, list workspaces, full-text search, AI-powered cross-matter investigations, every record cited to source.",
+      "title": "Aurora",
+      "type": "http",
+      "url": "https://mcp.ai.consilio.com"
+    },
+    "CourtListener": {
+      "description": "Free Law Project's legal research platform \u2014 millions of U.S. court opinions, PACER dockets, judge profiles, oral arguments, and citation verification.",
+      "title": "CourtListener",
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/"
+    },
+    "Everlaw": {
+      "description": "Search, organize, and retrieve documents from your Everlaw projects \u2014 metadata, keywords, document types \u2014 with review links.",
+      "title": "Everlaw",
+      "type": "http",
+      "url": "https://api.everlaw.com/v1/mcp"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+    "TopCounsel": {
+      "description": "Outside counsel recommendations from The L Suite \u2014 5,000+ in-house counsel community sentiment, rankings, and expertise evidence.",
+      "title": "TopCounsel",
+      "type": "http",
+      "url": "https://api.techgc.co/api/mcp/topcounsel"
+    },
+    "Trellis": {
+      "description": "The largest state trial court dataset in the U.S. \u2014 dockets, rulings, verdicts, filings, judge and opposing counsel analytics, expert witness vetting.",
+      "title": "Trellis",
+      "type": "http",
+      "url": "https://mcp.trellis.law/anthropic"
+    }
+  },
+  "privacy-legal": {
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "product-legal": {
+    "Asana": {
+      "description": "Tasks and project tracking.",
+      "title": "Asana",
+      "type": "http",
+      "url": "https://mcp.asana.com/sse"
+    },
+    "Atlassian": {
+      "description": "Jira issues and Confluence pages.",
+      "title": "Atlassian",
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/sse"
+    },
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Linear": {
+      "description": "Issue tracking and project management.",
+      "title": "Linear",
+      "type": "http",
+      "url": "https://mcp.linear.app/mcp"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  },
+  "regulatory-legal": {
+    "Google Drive": {
+      "description": "Search, read, and fetch documents from Google Drive.",
+      "title": "Google Drive",
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "Slack": {
+      "description": "Search messages, read channels, find discussions across your workspace.",
+      "title": "Slack",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    }
+  }
+}
