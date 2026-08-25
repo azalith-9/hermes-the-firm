@@ -1,139 +1,140 @@
 # hermes-the-firm
+### *An entire legal practice, stuffed into your computer.*
 
-A complete legal practice for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — **1,155 skills across five layers**, one opt-in entry point, zero session-start cost.
+---
 
-```
-DEPARTMENTS      12 practice areas        anthropics/claude-for-legal
-FEDERAL RESEARCH live MCP connectors      beshkenadze/us-legal-tools
-CORPUS           US primary law on disk   Vaquill/open-us-law
-FIRM ADMIN       how the firm runs AI     HAQQ master-claude-for-legal
-LOUIS LIBRARY    982 deep-knowledge skills, MENA-first
-                                          HAQQ mini-claude-for-legal
-```
+Somewhere right now — it's always right now — a first-year associate is on hour nine of highlighting boxes of documents for a case that will settle anyway. That's called "billable hours." There are entire skyscrapers full of people doing this.
 
-Ported from four upstreams:
+And somewhere else, somebody with a real legal problem — an eviction, a denied claim, a contract written specifically to be misunderstood — is going to type their question into one of those chatty AI helpers. And that helper is going to do what they all do: hem, hedge, apologize, and serve up something that sounds like law but isn't. It read the brochure. It didn't read the law.
 
-| Source | License | What it contributes |
-|---|---|---|
-| [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) | Apache-2.0 | 12 practice-area departments + watcher agents + practice-profile system |
-| [beshkenadze/us-legal-tools](https://github.com/beshkenadze/us-legal-tools) | MIT | Federal MCP layer: eCFR, Federal Register, CourtListener (case law), govinfo — wiring skills + catalog |
-| [Vaquill/open-us-law](https://github.com/vaquill/open-us-law) | CC BY 4.0 (data) | The corpus: ~3M sections of US statutes/constitutions/court rules; coverage manifest drives the skills' honesty about what's verified |
-| [HAQQ Legal AI / master-claude-for-legal](https://github.com/haqq-ai/master-claude-for-legal) | MIT | AI governance skills, privilege-layer reference docs, firm AI policy / client data explainer / vendor security templates |
-| [HAQQ Legal AI / mini-claude-for-legal](https://github.com/haqq-ai/mini-claude-for-legal) | MIT | The Louis library: drafting, review, litigation simulation, education, safety, personas, connectors — Lebanon/KSA/UAE/Egypt/DIFC/ADGM first, FR/UK/US/EU secondary |
+**This is the other thing.**
 
-## How the layers work together
+hermes-the-firm is a legal practice — the whole organism — loaded into [Hermes Agent](https://github.com/NousResearch/hermes-agent), an AI that runs on *your* machine and works for *you*. Not a chatbot with a lawyer costume. A firm. With departments, and a library, and rules, and — this is the part nobody else does — the actual text of the actual law, sitting on your disk, quotable.
 
-A Michigan workers'-comp question routes like this: the department skills
-frame it against the firm's playbook, `us-statute-lookup` pulls MCL 418's
-actual text from the local corpus (Michigan ships complete and human-
-verified), `federal-courtlistener-setup` adds case law when wired,
-`us-citation-verify` round-trips every cite before anything is filed.
-Primary law on disk, live federal data on tap, case law via connector.
+Here's the breakdown, in plain English:
 
-## The name
+---
 
-"for-legal" names a tool; a firm is an institution — departments,
-administration, a library, and an associate who never sleeps. Also:
-who's alive to say Hermes wasn't firm? *Hermes: The Firm* (a la Spaceballs:
-The Movie). It scans like Kermit The Frog. And there was that TV show.
+## The five layers (or: how the sausage is legitimately made)
 
-## Design
+### 1. The lawyers — twelve departments
 
-- **Opt-in, not always-on.** Plugin skills are explicit loads: nothing
-  enters context until `skill_view("hermes-the-firm:<skill>")` is called.
-  No hooks, no bootstrap injection at session start.
-- **One flat namespace, honest ownership.** All 1,147 skills register as
-  `hermes-the-firm:<name>`. Cross-source name collisions are prefixed
-  (`firm-admin-tabular-review`); which skill belongs to what is recorded
-  at port time in `references/owner-map.json`, never guessed at runtime.
-- **Practice profiles are the product.** Each department has a cold-start
-  interview that writes `~/.hermes/plugins/config/hermes-the-firm/<area>/PRACTICE.md`.
-  Until populated, department skills refuse to give generic answers on
-  purpose. Louis and firm-admin skills are self-contained.
+Commercial contracts. Privacy. Product. Corporate deals. Employment. Litigation. Regulatory. AI governance. IP. Law school. Legal clinics. And a department whose whole job is installing more skills, because even firms need a guy.
 
-## Install
+Each department comes loaded with real workflows: how to triage an NDA, how to run an investigation, how to draft board minutes, how to not commit malpractice while doing it. Each department also interviews you first — an hour of questions about *your* shop — and then it stops being generic. Forever. Answer the questions once, and every skill in that department works from your playbook, your risk tolerance, your jurisdiction. Skip the interview, and it refuses to guess at you. Imagine that. Software that admits when it doesn't know you.
+
+### 2. The live wires — federal research, on tap
+
+Four connectors you flip on when you want them: the federal regulations (eCFR), the Federal Register (what the government is *doing* this week), CourtListener (case law — the stuff courts actually decided), and govinfo (the official paper trail). These talk straight to the source. No librarian, no login portal, no "seats."
+
+### 3. The vault — the actual law, on disk
+
+This is the one that matters. A project called open-us-law took essentially the entire statutory law of the United States — three million sections, all fifty states, from official government sources — and gave it away. We bolted it in.
+
+So when you ask about, say, **Michigan workers' comp**, this thing doesn't riff. It pulls **MCL 418** — the Workers' Disability Compensation Act — off your own disk and shows you the words. All 40,658 sections of Michigan law are there, verified complete by actual humans who counted. Fifty-one jurisdictions like that.
+
+And here's my favorite part, the part I'd put on the letterhead: the vault keeps a manifest of exactly what's verified and what isn't, and the firm **reads it before it answers**. If a state's law is thin in the collection, it tells you it's thin. It will not dress up a guess as a statute. Most software lies to you politely. This one tattles on itself.
+
+### 4. The rulebook — rules for the robot
+
+A firm needs policies. So there's a layer of skills about the AI itself: a model firm AI policy, privilege handling (what's protected and what only pretends to be), vendor security questionnaires, the anti-patterns that blow up legal teams in production. The machine comes with its own employee handbook. Somebody had to do it.
+
+### 5. The stacks — 982 skills deep
+
+A whole library of craft: drafting agreements, running reviews, simulating opposing counsel, coaching students through IRAC. Built originally with a Middle-East-first lens — Lebanon, Saudi Arabia, UAE, Egypt, the DIFC and ADGM free zones — because most legal AI assumes everybody practices in Delaware. Yours doesn't have to.
+
+---
+
+## The math
+
+**1,155 skills. Five layers. One command.**
+
+And here's the trick nobody pulls anymore: **it costs nothing until you ask for it.** No background daemon whispering into every conversation. No token tax while you're doing something unrelated. You type `/hermes-the-firm`, you pick a department, and *then* the relevant brains wake up. Everything runs locally. Nothing phones home. Your client's secrets stay in your building — which, in this profession, isn't a feature, it's the bar admission.
+
+## Getting it
 
 ```bash
-git clone <this-repo> ~/projects/hermes-the-firm    # or cp -r
+git clone <this-repo> ~/projects/hermes-the-firm
 mkdir -p ~/.hermes/plugins
 ln -s ~/projects/hermes-the-firm ~/.hermes/plugins/hermes-the-firm
-hermes plugins list
 hermes plugins enable hermes-the-firm
-# answer N to "replace built-in tools?" — this plugin registers one
-# command and read-only skills only
 ```
 
-Restart your session (or `hermes gateway restart`).
+Restart Hermes. Type `/hermes-the-firm`. Pick a department. Answer its questions honestly — it's the last time it'll ever have to guess about you.
 
-## Usage
+(The multi-gigabyte law vault is a separate download, because we figured you'd rather choose that yourself. One skill walks you through it. Keep reading — it's below.)
 
-```text
-/hermes-the-firm                       roster: departments + connectors + corpus + library
-/hermes-the-firm litigation            one department's skills
-/hermes-the-firm federal-mcp           federal research connector wiring
-/hermes-the-firm firm-admin            AI governance layer
-/hermes-the-firm primary-law           US statute lookup / citation verify
-/hermes-the-firm louis                 Louis categories overview
-/hermes-the-firm louis draft           one category (102 drafting skills)
+## One firm, several offices — installing into a profile
 
-skill_view("hermes-the-firm:nda-review")             direct load
-skill_view("hermes-the-firm:us-statute-lookup")      corpus search
-```
+Here's a thing about Hermes nobody warns you about: plugins are discovered **per home**. A profile session looks in its *own* plugin drawer and nowhere else. You installed the firm in your main office? Congratulations — your legal-work profile can't see it. It's not a bug. It's more like each office having its own mail room. Secure, if you enjoy that sort of thing. Annoying, if you just wanted your mail.
 
-First run in a department: load its `<prefix>-cold-start-interview`.
-
-## Installing into a profile
-
-Hermes discovers plugins **per home**: a profile session resolves from
-`$HERMES_HOME/plugins/`, never the default `~/.hermes/plugins/`. The
-default-home install above is invisible to profile sessions. To make the
-firm available to one profile (e.g. your legal-work profile):
+So if you run a separate profile for legal work (and you should — you don't wear the same shoes to court and to the beach), you install it twice:
 
 ```bash
-# 1. symlink into that profile's plugins dir
+# 1. hang the firm in that profile's closet
 ln -s ~/projects/hermes-the-firm \
       ~/.hermes/profiles/<profile>/plugins/hermes-the-firm
 
-# 2. enable via CLI under that profile's HERMES_HOME
+# 2. flip the switch from inside THAT home
 HERMES_HOME=~/.hermes/profiles/<profile> hermes plugins enable hermes-the-firm
 ```
 
-Answer **N** to the tool-override prompt — this plugin registers one
-command and read-only skills only. Restart any sessions already running
-under that profile; discovery happens at session start. Skills are
-explicit-load, so enabling adds no session-start cost.
+When it asks about replacing built-in tools, say **N**. This plugin registers one command and read-only skills. It doesn't want your tools. It wants to work.
 
-## Regenerating from upstream
+Then restart any sessions already running under that profile — discovery happens at session start, not mid-sentence. And since every skill is explicit-load, enabling costs nothing until you actually ask for the firm. Same trick as before. Free until used. Radical concept.
+
+## Stocking the vault — pulling the law off Hugging Face
+
+Remember the vault? The actual law, on disk? Here's where it comes from, and here's how you go get it yourself, because depending on somebody else's download button is how you end up with somebody else's rules.
+
+The whole corpus lives on [Hugging Face](https://huggingface.co/datasets/vaquill/open-us-law) as parquet files — one file per state, one per topic. `us_mi_statutes.parquet` is Michigan's entire statutory code. Twenty megabytes. The state of Michigan charges law publishers money for this. Vaquill gives it away. Pick whichever business model smells better to you.
+
+First, get yourself an account token and do this once:
 
 ```bash
-# regeneration from the upstream checkouts is done with our
-# internal port toolchain (not part of this distribution);
-# verification:
-python3 -m pytest tests/ -q
+hf auth login
 ```
 
-Regeneration is idempotent and rebuilds `skills/`, `templates/`, and
-generated files under `references/` wholesale. Don't hand-edit those
-trees; changes belong in the upstream sources.
+That's it. That's authentication. No SSO portal. No "verify you are not a law firm."
 
-Notable converter fixes applied on port:
-- 70 Louis skills shipped broken YAML frontmatter upstream (unquoted
-  `:` scalars) — quoted automatically, verified parseable.
-- `tabular-review` existed in both corporate-legal and the master pack;
-  both preserved, master's renamed `firm-admin-tabular-review`.
+Now — and this is the part I want you to actually hear — **you don't have to download all of it.** Three and a half gigabytes of law sounds impressive at parties, but the federal regulations alone are 2.7 gigs of that (the CFR is *enormous*, which tells you something about what your government has been up to). If you practice in Michigan and occasionally touch federal employment law, grab exactly that:
 
-## Verification status
+```bash
+# everything for one state
+hf download vaquill/open-us-law --repo-type dataset \
+    us_mi_statutes.parquet us_mi_constitutions.parquet \
+    us_mi_court_rules.parquet us_mi_guidance.parquet \
+    --local-dir ~/projects/open-us-law/data/
 
-- `pytest tests/` — 12 leak/structure/source tests green
-- Herminator validation — 1,155/1,155 SKILL.md valid
-- Real `PluginManager` load — 1,155 skills + `/hermes-the-firm` command
-  registered; namespaced resolution confirmed across all five layers
+# plus the federal statutes (ADA, FMLA — the usual suspects)
+hf download vaquill/open-us-law --repo-type dataset \
+    us_federal_statutes.parquet us_federal_constitutions.parquet \
+    us_federal_court_rules.parquet \
+    --local-dir ~/projects/open-us-law/data/
+```
 
-## Attribution
+Swap `<state postal code>` into those filenames for any other state. Want everything? Drop the filenames and it'll pull the whole shelf. Your disk, your funeral, your three million sections.
 
-- Practice departments: Anthropic (claude-for-legal), Apache-2.0
-- Federal MCP wiring: beshkenadze (us-legal-tools), MIT
-- US law corpus data: Vaquill (open-us-law), CC BY 4.0
-- Firm admin + Louis library: HAQQ Legal AI, MIT
-- Port: rJ9, following the hermes-superpowers port conventions.
-  See LICENSE and THIRD-PARTY-NOTICES.md.
+Two pieces of housekeeping that separate adults from tourists:
+
+1. **Verify what you downloaded.** The repo ships a `SHA256SUMS.json` — a manifest of checksums, which is a fancy way of saying "the seller keeps a receipt." Check yours against theirs:
+
+```bash
+python3 ~/projects/open-us-law/scripts/verify_pull.py
+```
+
+If a hash doesn't match, the file changed somewhere between Virginia and your disk, and you do NOT want to cite a statute that got mangled in transit. This is legal work. Trust, but verify the checksum.
+
+2. **Don't commit the data.** It's public-domain law; the repo is for code. The data directory stays local, like good silverware.
+
+And that's the whole ceremony. `hf auth login` once, `hf download` with the files you want, verify against the manifest. The entire statutory law of the United States, delivered to your machine, for free, in about the time it takes to explain to a client why their invoice has four decimal points on it.
+
+## The fine print, in large type
+
+This is a practice, not a license. It drafts, it checks, it verifies citations against primary sources, it flags what needs a human eyeball. It does not replace your lawyer, your judgment, or your jurisdiction's bar exam. It makes the person using it dangerous — in the good way.
+
+Built by standing on some tall shoulders: Anthropic's claude-for-legal (Apache-2.0), Vaquill's open-us-law corpus (CC BY 4.0 — data wants to be free, and here, it finally is), Beshkenadze's us-legal-tools (MIT), and HAQQ Legal AI's master and mini packs (MIT). Ported to Hermes by rJ9. Licenses and attributions live in THIRD-PARTY-NOTICES.md, because credit is another thing that shouldn't be paywalled.
+
+---
+
+*It's pronounced "Hermes: The Firm." Like the movie. Like Kermit. Say it out loud once and you'll never call it anything else.*
