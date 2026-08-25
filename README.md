@@ -1,6 +1,8 @@
 # hermes-the-firm
 ### *An entire legal practice, stuffed into your computer.*
 
+![status](https://img.shields.io/badge/tests-14%2F14-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C155-orange)
+
 ---
 
 Somewhere right now — it's always right now — a first-year associate is on hour nine of highlighting boxes of documents for a case that will settle anyway. That's called "billable hours." There are entire skyscrapers full of people doing this.
