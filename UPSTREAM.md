@@ -6,11 +6,16 @@ two HAQQ Legal AI skill packs (MIT) into one Hermes plugin.
 
 - **Tracked versions:**
   - anthropics/claude-for-legal `main` @ `4a6c651` ("Update plugin content")
-  - haqq-ai/master-claude-for-legal (MIT) — checkout at ~/projects/master-claude-for-legal
-  - haqq-ai/mini-claude-for-legal (MIT, the Louis library) — checkout at ~/projects/mini-claude-for-legal
+  — that upstream ships no NOTICE file (checked at the pinned commit);
+  Apache-2.0 §4(d) therefore imposes no NOTICE-preservation obligation.
+  Upstream copyright lines are reproduced in THIRD-PARTY-NOTICES.md.
+  - haqq-ai/master-claude-for-legal (MIT)
+  - haqq-ai/mini-claude-for-legal (MIT, the Louis library)
 - **Upstream repos:**
   - https://github.com/anthropics/claude-for-legal
-  - master/mini checkouts are local; licenses in THIRD-PARTY-NOTICES.md
+  - https://github.com/haqq-ai/master-claude-for-legal
+  - https://github.com/haqq-ai/mini-claude-for-legal
+  - Licenses in THIRD-PARTY-NOTICES.md
 - **License:** Apache-2.0 (Anthropic) + MIT (HAQQ) — see LICENSE and
   THIRD-PARTY-NOTICES.md
 

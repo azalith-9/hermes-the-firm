@@ -52,3 +52,59 @@ projects. Each skill carries an HTML port note naming its provenance;
   The corpus itself is multi-GB and stays external — install separately
   (see the `us-statute-lookup` skill); nothing corpus-sized is bundled.
 - Owner-map value: `primary-law`.
+
+---
+
+## Copyright notices and license texts
+
+Per the MIT License condition ("the above copyright notice and this
+permission notice shall be included in all copies or substantial portions
+of the Software") and Apache-2.0 §4(a), the upstream copyright notices are
+reproduced verbatim below.
+
+### MIT projects — full permission notice (applies to each project listed)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+**Copyright lines:**
+
+- HAQQ master-claude-for-legal: `Copyright (c) 2026 HAQQ Legal AI and contributors`
+- HAQQ mini-claude-for-legal (Louis library): `Copyright (c) 2026 HAQQ Legal AI / Stephane Boghossian`
+- beshkenadze/us-legal-tools: `Copyright (c) 2024 Aleksandr Beshkenadze <beshkenadze@gmail.com>`
+
+### anthropics/claude-for-legal — Apache-2.0
+
+`Copyright 2026 Anthropic PBC` per that repository's licensing headers; the
+upstream ships no separate NOTICE file (verified at commit `4a6c651`, see
+UPSTREAM.md). This distribution's own Apache-2.0 grant is in LICENSE.
+
+### Vaquill open-us-law data — CC BY 4.0 carve-out
+
+The bundled file `references/us-law-coverage.json` is generated from the
+Vaquill open-us-law audited coverage manifest and remains under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0); it is
+NOT sublicensed under this repository's Apache-2.0 grant.
+Copyright (c) 2026 Vaquill AI — compilation and metadata only. The
+underlying statutory text is public domain under the government-edicts
+doctrine and carries no copyright.
+
+Attribution: Vaquill, "open-us-law"
+(https://github.com/vaquill/open-us-law;
+https://huggingface.co/datasets/vaquill/open-us-law), licensed under
+CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/legalcode
