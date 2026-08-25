@@ -82,6 +82,27 @@ skill_view("hermes-the-firm:us-statute-lookup")      corpus search
 
 First run in a department: load its `<prefix>-cold-start-interview`.
 
+## Installing into a profile
+
+Hermes discovers plugins **per home**: a profile session resolves from
+`$HERMES_HOME/plugins/`, never the default `~/.hermes/plugins/`. The
+default-home install above is invisible to profile sessions. To make the
+firm available to one profile (e.g. your legal-work profile):
+
+```bash
+# 1. symlink into that profile's plugins dir
+ln -s ~/projects/hermes-the-firm \
+      ~/.hermes/profiles/<profile>/plugins/hermes-the-firm
+
+# 2. enable via CLI under that profile's HERMES_HOME
+HERMES_HOME=~/.hermes/profiles/<profile> hermes plugins enable hermes-the-firm
+```
+
+Answer **N** to the tool-override prompt — this plugin registers one
+command and read-only skills only. Restart any sessions already running
+under that profile; discovery happens at session start. Skills are
+explicit-load, so enabling adds no session-start cost.
+
 ## Regenerating from upstream
 
 ```bash
