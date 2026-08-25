@@ -15,6 +15,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install test dependencies
+        run: |
+          python -m pip install --quiet pytest pyyaml
+
       - name: Run test suite
         run: |
           python -m pytest tests/ -q
@@ -22,14 +26,8 @@ jobs:
       - name: Validate SKILL.md frontmatter parses
         run: |
           python3 - <<'EOF'
-          import sys, glob
+          import sys, glob, yaml
           # every skill must have a SKILL.md whose YAML frontmatter loads
-          try:
-              import yaml
-          except ImportError:
-              subprocess = __import__('subprocess')
-              subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', 'pyyaml'], check=True)
-              import yaml
           bad = []
           for path in glob.glob('skills/*/SKILL.md'):
               text = open(path, encoding='utf-8').read()
