@@ -131,7 +131,7 @@ And that's the whole ceremony. `hf auth login` once, `hf download` with the file
 
 ## The fine print, in large type
 
-This is a practice, not a license. It drafts, it checks, it verifies citations against primary sources, it flags what needs a human eyeball. It does not replace your lawyer, your judgment, or your jurisdiction's bar exam. It makes the person using it dangerous — in the good way.
+This is a practice, not a license. (The license is Apache-2.0 — see LICENSE.) It drafts, it checks, it verifies citations against primary sources, it flags what needs a human eyeball. It does not replace your lawyer, your judgment, or your jurisdiction's bar exam. It makes the person using it dangerous — in the good way.
 
 Built by standing on some tall shoulders: Anthropic's claude-for-legal (Apache-2.0), Vaquill's open-us-law corpus (CC BY 4.0 — data wants to be free, and here, it finally is), Beshkenadze's us-legal-tools (MIT), and HAQQ Legal AI's master and mini packs (MIT). Ported to Hermes by rJ9. Licenses and attributions live in THIRD-PARTY-NOTICES.md, because credit is another thing that shouldn't be paywalled.
 
