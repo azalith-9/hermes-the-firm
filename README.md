@@ -56,9 +56,9 @@ And here's the trick nobody pulls anymore: **it costs nothing until you ask for 
 ## Getting it
 
 ```bash
-git clone <this-repo> ~/projects/hermes-the-firm
+git clone <this-repo> ~/hermes-the-firm
 mkdir -p ~/.hermes/plugins
-ln -s ~/projects/hermes-the-firm ~/.hermes/plugins/hermes-the-firm
+ln -s ~/hermes-the-firm ~/.hermes/plugins/hermes-the-firm
 hermes plugins enable hermes-the-firm
 ```
 
@@ -74,7 +74,7 @@ So if you run a separate profile for legal work (and you should — you don't we
 
 ```bash
 # 1. hang the firm in that profile's closet
-ln -s ~/projects/hermes-the-firm \
+ln -s ~/hermes-the-firm \
       ~/.hermes/profiles/<profile>/plugins/hermes-the-firm
 
 # 2. flip the switch from inside THAT home
@@ -106,13 +106,13 @@ Now — and this is the part I want you to actually hear — **you don't have to
 hf download vaquill/open-us-law --repo-type dataset \
     us_mi_statutes.parquet us_mi_constitutions.parquet \
     us_mi_court_rules.parquet us_mi_guidance.parquet \
-    --local-dir ~/projects/open-us-law/data/
+    --local-dir ~/hermes-the-firm/data/
 
 # plus the federal statutes (ADA, FMLA — the usual suspects)
 hf download vaquill/open-us-law --repo-type dataset \
     us_federal_statutes.parquet us_federal_constitutions.parquet \
     us_federal_court_rules.parquet \
-    --local-dir ~/projects/open-us-law/data/
+    --local-dir ~/hermes-the-firm/data/
 ```
 
 Swap `<state postal code>` into those filenames for any other state. Want everything? Drop the filenames and it'll pull the whole shelf. Your disk, your funeral, your three million sections.
@@ -122,8 +122,10 @@ Two pieces of housekeeping that separate adults from tourists:
 1. **Verify what you downloaded.** The repo ships a `SHA256SUMS.json` — a manifest of checksums, which is a fancy way of saying "the seller keeps a receipt." Check yours against theirs:
 
 ```bash
-python3 ~/projects/open-us-law/scripts/verify_pull.py
+python3 tools/verify-corpus.py --data-dir ~/projects/open-us-law/data/
 ```
+
+(That tool ships with this repo — no other checkout needed. Point `--data-dir` wherever you pulled the files. Want to prove a specific citation actually resolves before you rely on it? Add `--cite "MCL 418"` and it'll count the sections.)
 
 If a hash doesn't match, the file changed somewhere between Virginia and your disk, and you do NOT want to cite a statute that got mangled in transit. This is legal work. Trust, but verify the checksum.
 
