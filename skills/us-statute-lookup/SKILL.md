@@ -25,7 +25,9 @@ The corpus is NOT bundled with this plugin (it is multi-GB). Check these
 locations, in order:
 
 1. `$OPEN_US_LAW_DIR` environment variable
-2. `~/data/open-us-law/` (parquet files named `us_< jurisdiction>_<corpus>.parquet`)
+2. `<plugin-repo>/data/` — the `data/` folder inside the hermes-the-firm
+   checkout itself (parquet files named `us_<jurisdiction>_<corpus>.parquet`).
+   This is where the plugin README's download commands put it.
 3. If absent: tell the user how to fetch it —
    `huggingface.co/datasets/vaquill/open-us-law` or the R2 mirror at
    `oss-data-us.vaquill.ai` (see that project's README). Do not fabricate
