@@ -143,4 +143,18 @@ Built by standing on some tall shoulders: Anthropic's claude-for-legal (Apache-2
 
 ---
 
+## The shoulders
+
+Nothing here is built from nothing. Five projects did the heavy lifting first:
+
+- [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) — the twelve departments. Anthropic wrote the practice; we gave it a building.
+- [sboghossian/master-claude-for-legal](https://github.com/sboghossian/master-claude-for-legal) — the firm-admin layer. Rules for the robot.
+- [sboghossian/mini-claude-for-legal](https://github.com/sboghossian/mini-claude-for-legal) — the Louis library. All 982 of them.
+- [beshkenadze/us-legal-tools](https://github.com/beshkenadze/us-legal-tools) — the federal wiring. eCFR, Federal Register, CourtListener, govinfo, on tap.
+- [Vaquill-AI/open-us-law](https://github.com/Vaquill-AI/open-us-law) — the vault itself. Three million sections of American law, given away. Read that sentence again in 2026 and tell me there's no hope.
+
+Five licenses, one stack, zero paywalls. Credit where it's due — which, unlike most places, means actually *given*, not buried in a footer nobody reads.
+
+---
+
 *It's pronounced "Hermes: The Firm." Like the movie. Like Kermit. Say it out loud once and you'll never call it anything else.*
