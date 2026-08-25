@@ -115,6 +115,8 @@ hf download vaquill/open-us-law --repo-type dataset \
     --local-dir ~/hermes-the-firm/data/
 ```
 
+The data pours straight into the plugin's own `data/` folder — where the skills already know to look. One directory, self-contained firm.
+
 Swap `<state postal code>` into those filenames for any other state. Want everything? Drop the filenames and it'll pull the whole shelf. Your disk, your funeral, your three million sections.
 
 Two pieces of housekeeping that separate adults from tourists:
@@ -122,10 +124,10 @@ Two pieces of housekeeping that separate adults from tourists:
 1. **Verify what you downloaded.** The repo ships a `SHA256SUMS.json` — a manifest of checksums, which is a fancy way of saying "the seller keeps a receipt." Check yours against theirs:
 
 ```bash
-python3 tools/verify-corpus.py --data-dir ~/projects/open-us-law/data/
+python3 tools/verify-corpus.py
 ```
 
-(That tool ships with this repo — no other checkout needed. Point `--data-dir` wherever you pulled the files. Want to prove a specific citation actually resolves before you rely on it? Add `--cite "MCL 418"` and it'll count the sections.)
+(That tool ships with this repo, and by default it checks the plugin's own `data/` folder — the same place the download commands above put everything. No other checkout needed. Want to prove a specific citation actually resolves before you rely on it? Add `--cite "418."` and it'll count the sections.)
 
 If a hash doesn't match, the file changed somewhere between Virginia and your disk, and you do NOT want to cite a statute that got mangled in transit. This is legal work. Trust, but verify the checksum.
 

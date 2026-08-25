@@ -8,8 +8,8 @@ Michigan and federal statutes. Optionally spot-checks that a citation you
 care about actually resolves in the downloaded files.
 
 Usage:
-    # verify everything in ~/data/open-us-law/ (the default location
-    # us-statute-lookup checks)
+    # verify everything in <this-repo>/data/ (the default: the plugin's
+    # own data folder — the same place the download commands below put it)
     python3 tools/verify-corpus.py
 
     # verify a specific directory
@@ -28,7 +28,7 @@ import json
 import os
 import sys
 
-DEFAULT_DATA_DIR = os.path.expanduser("~/data/open-us-law")
+DEFAULT_DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 MANIFEST = "SHA256SUMS.json"
 
 

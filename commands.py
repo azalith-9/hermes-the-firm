@@ -230,7 +230,7 @@ def handle_entry(raw: str) -> str:
             lines += [
                 "",
                 "The corpus itself is multi-GB and NOT bundled. Skills read",
-                "$OPEN_US_LAW_DIR or ~/data/open-us-law/; coverage claims",
+                "$OPEN_US_LAW_DIR or the data/ folder inside this plugin's",
                 "(per-state completeness) live in",
                 "  references/us-law-coverage.json",
                 "Data: Vaquill's open-us-law (CC BY 4.0), quarterly snapshots.",
