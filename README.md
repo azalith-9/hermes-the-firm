@@ -39,9 +39,11 @@ And here's my favorite part, the part I'd put on the letterhead: the vault keeps
 
 A firm needs policies. So there's a layer of skills about the AI itself: a model firm AI policy, privilege handling (what's protected and what only pretends to be), vendor security questionnaires, the anti-patterns that blow up legal teams in production. The machine comes with its own employee handbook. Somebody had to do it.
 
-### 5. The stacks — 982 skills deep
+### 5. The stacks — 1,155 skills, five layers deep
 
-A whole library of craft: drafting agreements, running reviews, simulating opposing counsel, coaching students through IRAC. Built originally with a Middle-East-first lens — Lebanon, Saudi Arabia, UAE, Egypt, the DIFC and ADGM free zones — because most legal AI assumes everybody practices in Delaware. Yours doesn't have to.
+A whole library of craft — 982 skills in the Louis collection alone: drafting agreements, running reviews, simulating opposing counsel, coaching students through IRAC. Built originally with a Middle-East-first lens — Lebanon, Saudi Arabia, UAE, Egypt, the DIFC and ADGM free zones — because most legal AI assumes everybody practices in Delaware. Yours doesn't have to.
+
+And the stacks now reach across the Atlantic without losing the accent. Layer 4 wires you into the live federal machinery — eCFR, the Federal Register, CourtListener's case law, govinfo's paper trail (§2). Layer 5 is the vault: four skills that read the actual statutory law of all fifty states off your own disk — look up a statute, verify a citation round-trip, check what jurisdiction coverage is human-verified before anything quotes it. Michigan to Maine, MENA to federal register. One library, every court that'll have you.
 
 ---
 
