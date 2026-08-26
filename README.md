@@ -1,6 +1,8 @@
 # hermes-the-firm
 ### *An entire legal practice, stuffed into your computer.*
 
+![Hermes: The Firm — a law library where one terminal actually read the books](assets/hero.jpg)
+
 ![status](https://img.shields.io/badge/tests-14%2F14-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C155-orange)
 
 ---
