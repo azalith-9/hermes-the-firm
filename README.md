@@ -3,7 +3,9 @@
 
 ![Hermes: The Firm — a law library where one terminal actually read the books](assets/hero.jpg)
 
-![status](https://img.shields.io/badge/tests-14%2F14-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C155-orange)
+![status](https://img.shields.io/badge/tests-14%2F14-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C432-orange)
+
+> **NOT LEGAL ADVICE.** These plugins are a drafting aid for self-represented litigants and the practitioners who help them. They produce document drafts and procedural information; they do **not** provide legal advice, do **not** select a legal strategy for any particular user, and do **not** create an attorney-client relationship. The user is the decision-maker on every choice — what motion to file, what defense to plead, what facts to swear to, whether to settle, whether to appeal. For complex matters, or matters with substantial sums at stake, consider consulting a licensed attorney in your jurisdiction. Verify every rule, deadline, dollar threshold, and statutory citation against current law before filing.
 
 ---
 
@@ -19,7 +21,7 @@ Here's the breakdown, in plain English:
 
 ---
 
-## The five layers (or: how the sausage is legitimately made)
+## The six layers (or: how the sausage is legitimately made)
 
 ### 1. The lawyers — twelve departments
 
@@ -43,17 +45,27 @@ And here's my favorite part, the part I'd put on the letterhead: the vault keeps
 
 A firm needs policies. So there's a layer of skills about the AI itself: a model firm AI policy, privilege handling (what's protected and what only pretends to be), vendor security questionnaires, the anti-patterns that blow up legal teams in production. The machine comes with its own employee handbook. Somebody had to do it.
 
-### 5. The stacks — 1,155 skills, five layers deep
+### 5. The stacks — 1,432 skills, five layers deep
 
 A whole library of craft — 982 skills in the Louis collection alone: drafting agreements, running reviews, simulating opposing counsel, coaching students through IRAC. Built originally with a Middle-East-first lens — Lebanon, Saudi Arabia, UAE, Egypt, the DIFC and ADGM free zones — because most legal AI assumes everybody practices in Delaware. Yours doesn't have to.
 
 And the stacks now reach across the Atlantic without losing the accent. Layer 4 wires you into the live federal machinery — eCFR, the Federal Register, CourtListener's case law, govinfo's paper trail (§2). Layer 5 is the vault: four skills that read the actual statutory law of all fifty states off your own disk — look up a statute, verify a citation round-trip, check what jurisdiction coverage is human-verified before anything quotes it. Michigan to Maine, MENA to federal register. One library, every court that'll have you.
 
+### 6. The states — a real lawyer's office, ten courthouses at a time
+
+Here's the part that'll save you from formatting a pleading by trial and error: a whole **state civil-practice floor**, one neighborhood at a time. Ten of them, plus the federal consumer-credit stuff that sits underneath.
+
+Every state gets its own suite — the local way to format a document (that's the part judges throw your case on for getting wrong), the venue specifics for the busy courthouses (Wayne County's Third Circuit in Detroit, King County in Seattle, the 36th District in Detroit where half the debt cases in the state land, the NYC Civil and Housing courts, Maricopa in Phoenix), and the day-to-day machinery of a case: drafts, motions, hearings, deadlines, filing, discovery, pro-se, post-judgment. Each state knows its own rules — Michigan's summary *disposition* (they don't call it summary judgment, and they're loud about it), New York's "-against-" captions, Tennessee's chancery courts, Washington's RCW.
+
+Then the six subject bundles that most people actually walk in the door with — **consumer debt** (sued by a debt buyer, here's how the state fights back), **family law**, **landlord-tenant**, **personal injury**, **employment**, and **commercial disputes**. And the consumer-credit layer underneath: how to order every one of your reports, dispute an error, document the harm, turn off the re-aging.
+
+The statutory *text* all of it points at — MCL, RCW, CPRL, the CFR — lives in the vault on your disk (§3). The skills know how to practice in the state; the vault supplies the exact words of the law. That's the thin-skill trick: the law updates, the practice stays put.
+
 ---
 
 ## The math
 
-**1,155 skills. Five layers. One command.**
+**1,432 skills. Six layers. One command.**
 
 And here's the trick nobody pulls anymore: **it costs nothing until you ask for it.** No background daemon whispering into every conversation. No token tax while you're doing something unrelated. You type `/hermes-the-firm`, you pick a department, and *then* the relevant brains wake up. Everything runs locally. Nothing phones home. Your client's secrets stay in your building — which, in this profession, isn't a feature, it's the bar admission.
 
@@ -143,21 +155,22 @@ And that's the whole ceremony. `hf auth login` once, `hf download` with the file
 
 This is a practice, not a license. (The license is Apache-2.0 — see LICENSE.) It drafts, it checks, it verifies citations against primary sources, it flags what needs a human eyeball. It does not replace your lawyer, your judgment, or your jurisdiction's bar exam. It makes the person using it dangerous — in the good way.
 
-Built by standing on some tall shoulders: Anthropic's claude-for-legal (Apache-2.0), Vaquill's open-us-law corpus (CC BY 4.0 — data wants to be free, and here, it finally is), Beshkenadze's us-legal-tools (MIT), and HAQQ Legal AI's master and mini packs (MIT). Ported to Hermes by rJ9. Licenses and attributions live in THIRD-PARTY-NOTICES.md, because credit is another thing that shouldn't be paywalled.
+Built by standing on some tall shoulders: Anthropic's claude-for-legal (Apache-2.0), Vaquill's open-us-law corpus (CC BY 4.0 — data wants to be free, and here, it finally is), Beshkenadze's us-legal-tools (MIT), HAQQ Legal AI's master and mini packs (MIT), and codearranger's claude-legal — the state civil-practice layer (MIT). Ported to Hermes by rJ9. Licenses and attributions live in THIRD-PARTY-NOTICES.md, because credit is another thing that shouldn't be paywalled.
 
 ---
 
 ## The shoulders
 
-Nothing here is built from nothing. Five projects did the heavy lifting first:
+Nothing here is built from nothing. Six projects did the heavy lifting first:
 
 - [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) — the twelve departments. Anthropic wrote the practice; we gave it a building.
 - [sboghossian/master-claude-for-legal](https://github.com/sboghossian/master-claude-for-legal) — the firm-admin layer. Rules for the robot.
 - [sboghossian/mini-claude-for-legal](https://github.com/sboghossian/mini-claude-for-legal) — the Louis library. All 982 of them.
 - [beshkenadze/us-legal-tools](https://github.com/beshkenadze/us-legal-tools) — the federal wiring. eCFR, Federal Register, CourtListener, govinfo, on tap.
 - [Vaquill-AI/open-us-law](https://github.com/Vaquill-AI/open-us-law) — the vault itself. Three million sections of American law, given away. Read that sentence again in 2026 and tell me there's no hope.
+- [codearranger/claude-legal](https://github.com/GalacticPlayground/claude-law) — the state civil-practice floor. Ten states, their courtrooms, their rules, their quirks, their pro-se lifelines, in plain skill form.
 
-Five licenses, one stack, zero paywalls. Credit where it's due — which, unlike most places, means actually *given*, not buried in a footer nobody reads.
+Six licenses, one stack, zero paywalls. Credit where it's due — which, unlike most places, means actually *given*, not buried in a footer nobody reads.
 
 ---
 
