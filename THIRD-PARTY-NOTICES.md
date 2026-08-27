@@ -53,31 +53,55 @@ projects. Each skill carries an HTML port note naming its provenance;
   (see the `us-statute-lookup` skill); nothing corpus-sized is bundled.
 - Owner-map value: `primary-law`.
 
-## codearranger — claude-legal / us-mi-legal-corpus
+## codearranger — claude-legal (U.S. state + federal civil-practice layer)
 
 - Source: https://github.com/GalacticPlayground/claude-law (the `claude-legal`
-  marketplace; checked out locally at `~/projects/claude-law`), plugin
-  `us-mi-legal-corpus`
+  marketplace; checked out locally at `~/projects/claude-law`). Ported
+  here: `us-mi-legal-corpus`, `us-az-legal-corpus`, `us-ca-legal-corpus`,
+  `us-co-legal-corpus`, `us-in-legal-corpus`, `us-ny-legal-corpus`,
+  `us-oh-legal-corpus`, `us-or-legal-corpus`, `us-tn-legal-corpus`,
+  `us-wa-legal-corpus`, and `us-federal-debt-corpus` (skills only).
 - License: MIT
-- Contributes: the Michigan civil-practice layer — 29 `mi-*` skills
-  (venue skills for Wayne / Third Circuit, Oakland / Sixth Circuit, the
-  36th District Court, circuit/district/family-court roll-ups; MCR 1.109 /
-  2.113 statewide formatting; drafting, motion, hearing, deadline, filing,
-  pro-se, post-judgment procedural skills; the six subject-matter bundles
-  `mi-consumer-debt`, `mi-family-law`, `mi-landlord-tenant`,
-  `mi-personal-injury`, `mi-employment`, `mi-commercial-disputes`) plus the
-  verbatim Michigan Court Rules / Michigan Rules of Evidence corpus and the
-  curated Michigan statute index under `mi-law-references`.
-- Owner-map value: `mi-legal`.
+- Contributes: a per-state civil-practice layer for **nine states** plus a
+  federal consumer-credit layer:
+  - Michigan (29 `mi-*`), Arizona (28 `az-*`), California (21 `ca-*`),
+    Colorado (22 `co-*`), Indiana (23 `in-*`), New York (35 `ny-*`),
+    Ohio (30 `oh-*`), Oregon (21 `or-*`), Tennessee (31 `tn-*`),
+    Washington (32 `wa-*`).
+  - Each state ships venue skills (e.g. Wayne/Third, Oakland/Sixth,
+    36th District, King County District/Superior, Maricopa/Pima, the
+    NYC Civil/Housing/Commercial courts), statewide court-rule document
+    formatting, and drafting/motion/hearing/deadline/filing/pro-se/
+    post-judgment procedural skills, plus subject-matter bundles
+    (consumer-debt, family-law, landlord-tenant, personal-injury,
+    employment, commercial-disputes where the state justifies them).
+  - Each state carries a verbatim court-rules corpus + a curated state-code
+    index under its `<st>-law-references` skill.
+  - Federal consumer-credit layer (5 FCRA/consumer-report skills from
+    `us-federal-debt-corpus`): `consumer-report-ordering`,
+    `consumer-credit-disputes`, `consumer-report-accuracy`,
+    `consumer-harm-documentation`, `consumer-credit-monitoring`.
+- Owner-map values: `mi-legal`, `az-legal`, `ca-legal`, `co-legal`,
+  `in-legal`, `ny-legal`, `oh-legal`, `or-legal`, `tn-legal`, `wa-legal`,
+  and `federal-debt`.
 
 ### Thin-adaptation note
 
-This layer was rolled in thin: the `us-federal-debt-corpus` corpora the
-upstream MI plugin symlinked in (FDCPA/FCRA/Reg-F/TILA federal text, Title 11
-U.S.C., model UCC) are NOT bundled here. That primary-law text is served by
-this repo's existing open-us-law corpus via the `us-statute-lookup` skill
-(federal = USC + CFR, complete + human-verified). See
-`skills/mi-law-references/references/federal-layer.md`.
+Each upstream state plugin symlinked three federal corpora
+(`federal-debt-laws/`, `federal-bankruptcy/`, `ucc-model/`) in from the shared
+`us-federal-debt-corpus` plugin, plus shipped redundant full-state-code
+verbatim dumps. In **hermes-the-firm** those are NOT bundled:
+
+- Federal/UCC primary-law text (FDCPA, FCRA, Reg-F, TILA, ECOA, Title 11,
+  model UCC) is served by this repo's existing open-us-law corpus via the
+  `us-statute-lookup` skill (federal = USC + CFR, complete + human-verified).
+- Full state-code verbatim dumps are likewise covered by the open-us-law
+  corpus (every state code COMPLETE + verified).
+- Each `<st>-law-references` skill carries a `references/federal-layer.md`
+  routing note describing exactly how each federal citation resolves.
+
+See `skills/mi-law-references/references/federal-layer.md` (and the
+state-specific equivalents) for the resolution table.
 
 ---
 

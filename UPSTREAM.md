@@ -12,7 +12,8 @@ layer (MIT) into one Hermes plugin.
   Upstream copyright lines are reproduced in THIRD-PARTY-NOTICES.md.
   - haqq-ai/master-claude-for-legal (MIT)
   - haqq-ai/mini-claude-for-legal (MIT, the Louis library)
-  - codearranger/claude-legal, `us-mi-legal-corpus` (MIT)
+  - codearranger/claude-legal, nine `us-<state>-legal-corpus` plugins
+    + `us-federal-debt-corpus` skills (MIT)
 - **Upstream repos:**
   - https://github.com/anthropics/claude-for-legal
   - https://github.com/haqq-ai/master-claude-for-legal
@@ -33,7 +34,7 @@ layer (MIT) into one Hermes plugin.
 | Per-plugin `.mcp.json` connector declarations | `references/upstream-mcp.json` (provenance only) |
 | master-claude-for-legal: 6 skills + 15 refs + 3 governance templates | `skills/` + `references/firm-admin/` + `templates/firm-admin-*` |
 | mini-claude-for-legal: 982 skills in 47 categories (Louis library) | `skills/<category-prefixed-flat>/`, owner `louis/<category>` |
-| codearranger `us-mi-legal-corpus`: 29 Michigan skills + MCR/MRE corpus + curated MI statute index | `skills/mi-*` (owner `mi-legal`); reference corpus under `skills/mi-law-references/references/`; federal/UCC text thin-adapted to the open-us-law corpus — see THIRD-PARTY-NOTICES.md |
+| codearranger `us-<state>-legal-corpus` ×9 (az/ca/co/in/mi/ny/oh/or/tn/wa): state skills + court-rules corpus + curated state-code index; `us-federal-debt-corpus` consumer-credit skills | `skills/<st>-*` (owners `<st>-legal`); reference corpus under each `<st>-law-references/references/`; federal/UCC text thin-adapted to the open-us-law corpus — see THIRD-PARTY-NOTICES.md |
 
 Not ported: `external_plugins/cocounsel-legal` (vendor-maintained) and
 `managed-agent-cookbooks/` (targets Claude Code's managed-agent runtime;
