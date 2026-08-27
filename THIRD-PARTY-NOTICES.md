@@ -53,6 +53,32 @@ projects. Each skill carries an HTML port note naming its provenance;
   (see the `us-statute-lookup` skill); nothing corpus-sized is bundled.
 - Owner-map value: `primary-law`.
 
+## codearranger — claude-legal / us-mi-legal-corpus
+
+- Source: https://github.com/GalacticPlayground/claude-law (the `claude-legal`
+  marketplace; checked out locally at `~/projects/claude-law`), plugin
+  `us-mi-legal-corpus`
+- License: MIT
+- Contributes: the Michigan civil-practice layer — 29 `mi-*` skills
+  (venue skills for Wayne / Third Circuit, Oakland / Sixth Circuit, the
+  36th District Court, circuit/district/family-court roll-ups; MCR 1.109 /
+  2.113 statewide formatting; drafting, motion, hearing, deadline, filing,
+  pro-se, post-judgment procedural skills; the six subject-matter bundles
+  `mi-consumer-debt`, `mi-family-law`, `mi-landlord-tenant`,
+  `mi-personal-injury`, `mi-employment`, `mi-commercial-disputes`) plus the
+  verbatim Michigan Court Rules / Michigan Rules of Evidence corpus and the
+  curated Michigan statute index under `mi-law-references`.
+- Owner-map value: `mi-legal`.
+
+### Thin-adaptation note
+
+This layer was rolled in thin: the `us-federal-debt-corpus` corpora the
+upstream MI plugin symlinked in (FDCPA/FCRA/Reg-F/TILA federal text, Title 11
+U.S.C., model UCC) are NOT bundled here. That primary-law text is served by
+this repo's existing open-us-law corpus via the `us-statute-lookup` skill
+(federal = USC + CFR, complete + human-verified). See
+`skills/mi-law-references/references/federal-layer.md`.
+
 ---
 
 ## Copyright notices and license texts
@@ -87,6 +113,7 @@ SOFTWARE.
 - HAQQ master-claude-for-legal: `Copyright (c) 2026 HAQQ Legal AI and contributors`
 - HAQQ mini-claude-for-legal (Louis library): `Copyright (c) 2026 HAQQ Legal AI / Stephane Boghossian`
 - beshkenadze/us-legal-tools: `Copyright (c) 2024 Aleksandr Beshkenadze <beshkenadze@gmail.com>`
+- codearranger/claude-legal (`us-mi-legal-corpus`): `Copyright (c) 2026 codearranger`
 
 ### anthropics/claude-for-legal — Apache-2.0
 
