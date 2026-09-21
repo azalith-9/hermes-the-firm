@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 PORTED from codearranger/claude-legal (MIT), plugin us-mi-legal-corpus,
-scripts/format-check.py. Logic unchanged; provenance noted for the
-firm's third-party-notices accounting.
+scripts/format-check.py. Logic unchanged except one hardening: XML parts
+are parsed with entity expansion disabled (billion-laughs defense —
+OOXML parts never carry a DTD, so any entity declaration is malicious).
 
 MCR 1.109 / MCR 2.113 format checker for Michigan court documents.
 
@@ -33,6 +34,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+try:  # optional hardening layer (stdlib byte-guard below suffices)
+    from defusedxml.ElementTree import fromstring as _defused_fromstring
+except ImportError:
+    _defused_fromstring = None
+
 # WordprocessingML namespaces
 NS = {
     "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
@@ -59,13 +65,29 @@ def qn(tag: str) -> str:
     return f"{{{NS[prefix]}}}{local}"
 
 
+def _safe_fromstring(data: bytes) -> ET.Element:
+    """Parse an OOXML part with entity expansion neutralized.
+
+    WordprocessingML parts never carry a DTD, so a DOCTYPE — and the
+    internal entities it could declare, the billion-laughs vector —
+    means the part is hostile or corrupt. The check is on raw bytes:
+    markup cannot appear unescaped inside text content, so nothing
+    legitimate is rejected. defusedxml is used when installed.
+    """
+    if b"<!DOCTYPE" in data or b"<!ENTITY" in data:
+        raise ET.ParseError("DTDs are not allowed in OOXML parts")
+    if _defused_fromstring is not None:
+        return _defused_fromstring(data)
+    return ET.fromstring(data)
+
+
 def load_part(zf: zipfile.ZipFile, path: str) -> ET.Element | None:
     """Parse an XML part from the .docx archive."""
     try:
         data = zf.read(path)
     except KeyError:
         return None
-    return ET.fromstring(data)
+    return _safe_fromstring(data)
 
 
 def check_paper_size(root: ET.Element) -> CheckResult:
