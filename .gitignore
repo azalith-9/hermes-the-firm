@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 *.pyc
 LINKEDIN-PROJECT-DRAFT.md
+data/
+.codegraph/
+.mimosa/
+vector-index/

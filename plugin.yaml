@@ -1,12 +1,14 @@
 name: hermes-the-firm
-version: 0.3.0
+version: 0.4.0
 description: >
-  Hermes-native legal practice rolling five layers into one plugin:
+  Hermes-native legal practice rolling six layers into one plugin:
   anthropics/claude-for-legal (12 practice-area departments, Apache-2.0),
   beshkenadze/us-legal-tools (federal MCP research connectors, MIT),
   Vaquill/open-us-law (US primary-law corpus coverage, CC BY 4.0 data),
-  HAQQ master-claude-for-legal (firm AI administration, MIT), and HAQQ
-  mini-claude-for-legal (the 982-skill Louis library, MENA-first, MIT).
-  1,155 skills behind one opt-in command. Requires Hermes Agent 0.18.0+.
+  HAQQ master-claude-for-legal (firm AI administration, MIT), HAQQ
+  mini-claude-for-legal (the 982-skill Louis library, MENA-first, MIT),
+  and codearranger/claude-legal (ten-state civil practice + federal
+  consumer credit, MIT). 1,432 skills behind one opt-in command.
+  Requires Hermes Agent 0.18.0+.
 author: rJ9 (Hermes port) · upstream content by Anthropic, Beshkenadze,
   Vaquill, and HAQQ Legal AI

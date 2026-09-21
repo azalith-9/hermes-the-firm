@@ -17,6 +17,8 @@ Which area owns which flat skill is decided at port time and written to
 references/owner-map.json — one source of truth, no guessing here. Owner values:
   - "<area>"            one of the twelve practice departments
   - "firm-admin"        HAQQ master pack (AI policy, governance)
+  - "<st>-legal"        one of ten state civil-practice floors (codearranger)
+  - "federal-debt"      federal consumer-credit layer (FCRA)
   - "louis/<category>"  HAQQ mini library, per category
 """
 import json
@@ -40,6 +42,14 @@ PRACTICE_AREAS = [
 
 # Non-department layers with their own roster sections.
 SPECIAL_AREAS = ["federal-mcp", "firm-admin", "primary-law"]
+
+# State civil-practice floors (codearranger/claude-legal, MIT) — drilled
+# into like departments, plus the federal consumer-credit layer.
+STATE_AREAS = [
+    "az-legal", "ca-legal", "co-legal", "in-legal", "mi-legal",
+    "ny-legal", "oh-legal", "or-legal", "tn-legal", "wa-legal",
+]
+FEDERAL_CREDIT = "federal-debt"
 
 _HERE = Path(__file__).parent
 _SKILLS_DIR = _HERE / "skills"
@@ -94,13 +104,24 @@ def _roster(owners: dict) -> str:
     lines = [
         "hermes-the-firm — a complete legal practice on Hermes.",
         "",
-        f"  {total} skills across five layers:",
+        f"  {total} skills across six layers:",
         "",
         "DEPARTMENTS (practice law; each has a cold-start interview)",
     ]
     for area in PRACTICE_AREAS:
         n = len(_skills_for(area, owners))
         lines.append(f"  {area:<24} {n:>3} skills")
+    ncred = len(_skills_for(FEDERAL_CREDIT, owners))
+    lines += [
+        "",
+        "STATE PRACTICE (civil procedure, one courthouse at a time)",
+    ]
+    for area in STATE_AREAS:
+        n = len(_skills_for(area, owners))
+        lines.append(f"  {area:<24} {n:>3} skills")
+    lines.append(
+        f"  {'federal-debt':<24} {ncred:>3} skills"
+        "   <- credit reports, disputes, harm docs (FCRA)")
     fmcp = len(_skills_for("federal-mcp", owners))
     fa = len(_skills_for("firm-admin", owners))
     pl = len(_skills_for("primary-law", owners))
@@ -119,14 +140,15 @@ def _roster(owners: dict) -> str:
     for cat, n in cats.items():
         row.append(f"{cat}({n})")
         if len(row) == 6:
-            lines.append("  " + "  ".join(f"{r:<14}" for r in row))
+            lines.append("  " + "  ".join(f"{r:<18}" for r in row))
             row = []
     if row:
-        lines.append("  " + "  ".join(f"{r:<14}" for r in row))
+        lines.append("  " + "  ".join(f"{r:<18}" for r in row))
     lines += [
         "",
-        "Drill in: /hermes-the-firm <area> | firm-admin | louis [category]",
-        'Or load directly: skill_view("hermes-the-firm:<skill>").',
+        "Drill in: /hermes-the-firm <area> — or just type /firm and pick",
+        "an area from the command menu (every area is /firm-<area>).",
+        'Load directly with: skill_view("hermes-the-firm:<skill>").',
         "New to a department? Run its cold-start interview first — every",
         "skill there reads the practice profile it writes.",
     ]
@@ -142,10 +164,10 @@ def _louis_listing(owners: dict, category: str | None) -> str:
         for cat, n in cats.items():
             row.append(f"{cat}({n})")
             if len(row) == 6:
-                lines.append("  " + "  ".join(f"{r:<16}" for r in row))
+                lines.append("  " + "  ".join(f"{r:<18}" for r in row))
                 row = []
         if row:
-            lines.append("  " + "  ".join(f"{r:<16}" for r in row))
+            lines.append("  " + "  ".join(f"{r:<18}" for r in row))
         lines += ["", "Drill in: /hermes-the-firm louis <category>"]
         return "\n".join(lines)
 
@@ -230,10 +252,27 @@ def handle_entry(raw: str) -> str:
             lines += [
                 "",
                 "The corpus itself is multi-GB and NOT bundled. Skills read",
-                "$OPEN_US_LAW_DIR or the data/ folder inside this plugin's",
-                "(per-state completeness) live in",
+                "$OPEN_US_LAW_DIR or the data/ folder inside this plugin.",
+                "Per-state completeness (human-verified) lives in",
                 "  references/us-law-coverage.json",
                 "Data: Vaquill's open-us-law (CC BY 4.0), quarterly snapshots.",
+            ]
+            return "\n".join(lines)
+
+        if arg in STATE_AREAS or arg == FEDERAL_CREDIT:
+            skills = _skills_for(arg, owners)
+            if arg == FEDERAL_CREDIT:
+                head = (f"federal-debt — {len(skills)} skills on consumer "
+                        "credit & reporting (FCRA).")
+            else:
+                head = f"{arg} — {len(skills)} skills (state civil practice)."
+            lines = [head, ""]
+            for s in skills:
+                lines.append(f'  skill_view("hermes-the-firm:{s}")')
+            lines += [
+                "",
+                "Statutory text comes from the vault — /hermes-the-firm",
+                "primary-law (corpus files land in this plugin's data/).",
             ]
             return "\n".join(lines)
 
@@ -255,8 +294,41 @@ def handle_entry(raw: str) -> str:
             ]
             return "\n".join(lines)
 
-        known = ", ".join(PRACTICE_AREAS + SPECIAL_AREAS + ["louis"])
+        known = ", ".join(PRACTICE_AREAS + STATE_AREAS + SPECIAL_AREAS
+                          + [FEDERAL_CREDIT, "louis"])
         return (f"unknown area {raw.strip()!r}. areas:\n{known}\n"
                 f"(or: louis <category>)")
     except Exception as e:  # never break the session over a listing
         return f"hermes-the-firm error: {e}"
+
+
+def make_drill(area: str):
+    """Handler for a /firm-<area> command: any trailing args are ignored,
+    the area listing is returned."""
+    def _drill(_raw: str) -> str:
+        return handle_entry(area)
+    return _drill
+
+
+def drill_commands() -> list[tuple[str, object, str]]:
+    """(name, handler, description) rows for the /firm-* command family.
+
+    Registering every drill target as its own slash command is what makes
+    the areas selectable: plugin commands surface in the composer's slash
+    popover (TUI and desktop) with their descriptions, so the user picks
+    a department from the menu instead of typing its argument.
+    """
+    owners = _owner_map()
+
+    def _count(area: str) -> int:
+        if area == "louis":
+            return sum(1 for v in owners.values() if v.startswith("louis/"))
+        return sum(1 for v in owners.values() if v == area)
+
+    rows = [("firm", handle_entry,
+             "hermes-the-firm — the roster (all areas, one command)")]
+    for area in (PRACTICE_AREAS + STATE_AREAS + SPECIAL_AREAS
+                 + [FEDERAL_CREDIT, "louis"]):
+        rows.append((f"firm-{area}", make_drill(area),
+                     f"hermes-the-firm — {area} ({_count(area)} skills)"))
+    return rows

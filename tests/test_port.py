@@ -148,8 +148,9 @@ def test_merged_leave_tracker_reference_exists():
 
 
 def test_all_sources_represented():
-    """All four upstreams must land: departments, federal-mcp, firm-admin,
-    louis, primary-law."""
+    """All upstreams must land: departments, federal-mcp, firm-admin,
+    louis, primary-law, plus codearranger's state floors + consumer
+    credit."""
     import json
     owners = json.loads((HERE / "references" / "owner-map.json")
                         .read_text(encoding="utf-8"))
@@ -160,7 +161,60 @@ def test_all_sources_represented():
     assert "louis" in kinds, "mini-claude-for-legal missing"
     assert "federal-mcp" in kinds, "us-legal-tools missing"
     assert "primary-law" in kinds, "open-us-law missing"
+    for st in ("az", "ca", "co", "in", "mi", "ny", "oh", "or", "tn", "wa"):
+        assert f"{st}-legal" in kinds, f"{st} civil-practice layer missing"
+    assert "federal-debt" in kinds, "federal consumer-credit layer missing"
     assert len([v for v in owners.values() if "/" not in v]) >= 159
+
+
+def test_drill_commands_cover_every_owner():
+    """The /firm-* command family is what makes the areas selectable in
+    the slash popover — it must expose every owner in owner-map.json,
+    plus the bare /firm roster, and its handlers must route."""
+    import json
+    import commands
+    owners = json.loads((HERE / "references" / "owner-map.json")
+                        .read_text(encoding="utf-8"))
+    rows = {name: handler for name, handler, _ in commands.drill_commands()}
+    assert "firm" in rows, "the /firm roster command is missing"
+    for owner in sorted(set(owners.values())):
+        top = owner.split("/")[0]
+        expected = "firm-louis" if top == "louis" else f"firm-{top}"
+        assert expected in rows, f"{owner}: no /{expected} command"
+    assert commands.make_drill("mi-legal")("") == \
+        commands.handle_entry("mi-legal"), "drill handler routes wrong"
+
+
+def test_front_door_accounts_for_every_skill():
+    """The /hermes-the-firm front door must expose every owner in
+    owner-map.json. A layer rolled into skills/ + the map but not into
+    commands.py silently vanishes from the roster, and its drill-down
+    answers 'unknown area' (the state layer shipped exactly that way)."""
+    import json
+    import commands
+    owners = json.loads((HERE / "references" / "owner-map.json")
+                        .read_text(encoding="utf-8"))
+    drillable = set(commands.PRACTICE_AREAS + commands.STATE_AREAS
+                    + commands.SPECIAL_AREAS + [commands.FEDERAL_CREDIT])
+    roster = commands.handle_entry("")
+    counted = commands.PRACTICE_AREAS + commands.STATE_AREAS \
+        + [commands.FEDERAL_CREDIT]
+    for owner in sorted(set(owners.values())):
+        n = sum(1 for v in owners.values() if v == owner)
+        if owner.startswith("louis/"):
+            cat = owner.split("/", 1)[1]
+            out = commands.handle_entry(f"louis-{cat}")
+            assert f"{n} skills" in out and "unknown" not in out, \
+                f"louis/{cat} not drillable"
+            assert cat in roster, f"louis/{cat} missing from the roster"
+            continue
+        assert owner in drillable, (
+            f"owner {owner!r} not drillable — /hermes-the-firm {owner} "
+            f"would answer 'unknown area'")
+        assert owner in roster, f"{owner} missing from the roster"
+        if owner in counted:
+            assert f"{n} skills" in commands.handle_entry(owner), \
+                f"{owner}: drill-down does not state its skill count"
 
 
 def test_primarylaw_coverage_data_driven():

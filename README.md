@@ -3,7 +3,7 @@
 
 ![Hermes: The Firm — a law library where one terminal actually read the books](assets/hero.jpg)
 
-![status](https://img.shields.io/badge/tests-14%2F14-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C432-orange)
+![status](https://img.shields.io/badge/tests-16%2F16-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C432-orange)
 
 > **NOT LEGAL ADVICE.** These plugins are a drafting aid for self-represented litigants and the practitioners who help them. They produce document drafts and procedural information; they do **not** provide legal advice, do **not** select a legal strategy for any particular user, and do **not** create an attorney-client relationship. The user is the decision-maker on every choice — what motion to file, what defense to plead, what facts to swear to, whether to settle, whether to appeal. For complex matters, or matters with substantial sums at stake, consider consulting a licensed attorney in your jurisdiction. Verify every rule, deadline, dollar threshold, and statutory citation against current law before filing.
 
@@ -45,7 +45,7 @@ And here's my favorite part, the part I'd put on the letterhead: the vault keeps
 
 A firm needs policies. So there's a layer of skills about the AI itself: a model firm AI policy, privilege handling (what's protected and what only pretends to be), vendor security questionnaires, the anti-patterns that blow up legal teams in production. The machine comes with its own employee handbook. Somebody had to do it.
 
-### 5. The stacks — 1,432 skills, five layers deep
+### 5. The stacks — 1,432 skills, six layers deep
 
 A whole library of craft — 982 skills in the Louis collection alone: drafting agreements, running reviews, simulating opposing counsel, coaching students through IRAC. Built originally with a Middle-East-first lens — Lebanon, Saudi Arabia, UAE, Egypt, the DIFC and ADGM free zones — because most legal AI assumes everybody practices in Delaware. Yours doesn't have to.
 
@@ -78,7 +78,7 @@ ln -s ~/hermes-the-firm ~/.hermes/plugins/hermes-the-firm
 hermes plugins enable hermes-the-firm
 ```
 
-Restart Hermes. Type `/hermes-the-firm`. Pick a department. Answer its questions honestly — it's the last time it'll ever have to guess about you.
+Restart Hermes. Type `/hermes-the-firm` for the roster — or just type `/firm` and pick a department straight from the command menu (every department and state is its own `/firm-<area>` command, selectable without typing arguments). Answer its questions honestly — it's the last time it'll ever have to guess about you.
 
 (The multi-gigabyte law vault is a separate download, because we figured you'd rather choose that yourself. One skill walks you through it. Keep reading — it's below.)
 
@@ -118,16 +118,18 @@ That's it. That's authentication. No SSO portal. No "verify you are not a law fi
 Now — and this is the part I want you to actually hear — **you don't have to download all of it.** Three and a half gigabytes of law sounds impressive at parties, but the federal regulations alone are 2.7 gigs of that (the CFR is *enormous*, which tells you something about what your government has been up to). If you practice in Michigan and occasionally touch federal employment law, grab exactly that:
 
 ```bash
-# everything for one state
+# everything for one state (always pull SHA256SUMS.json too —
+# verification needs it, see below)
 hf download vaquill/open-us-law --repo-type dataset \
     us_mi_statutes.parquet us_mi_constitutions.parquet \
     us_mi_court_rules.parquet us_mi_guidance.parquet \
+    SHA256SUMS.json \
     --local-dir ~/hermes-the-firm/data/
 
 # plus the federal statutes (ADA, FMLA — the usual suspects)
 hf download vaquill/open-us-law --repo-type dataset \
     us_federal_statutes.parquet us_federal_constitutions.parquet \
-    us_federal_court_rules.parquet \
+    us_federal_court_rules.parquet SHA256SUMS.json \
     --local-dir ~/hermes-the-firm/data/
 ```
 
@@ -137,7 +139,7 @@ Swap `<state postal code>` into those filenames for any other state. Want everyt
 
 Two pieces of housekeeping that separate adults from tourists:
 
-1. **Verify what you downloaded.** The repo ships a `SHA256SUMS.json` — a manifest of checksums, which is a fancy way of saying "the seller keeps a receipt." Check yours against theirs:
+1. **Verify what you downloaded.** The dataset ships a `SHA256SUMS.json` — a manifest of checksums, which is a fancy way of saying "the seller keeps a receipt." Pull it down together with the parquet files (both commands above include it) and check yours against theirs:
 
 ```bash
 python3 tools/verify-corpus.py

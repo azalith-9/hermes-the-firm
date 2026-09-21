@@ -2,10 +2,11 @@
 
 Opt-in by design: plugin skills cost zero tokens until
 skill_view("hermes-the-firm:<name>") is called, so nothing loads at
-session start. The /hermes-the-firm command is the single front door —
-it prints the practice-area roster and points the agent at the entry
-skill. No lifecycle hooks; there is no process gate to enforce here,
-only domain knowledge and a practice-profile config to read.
+session start. /hermes-the-firm is the front door (roster), and the
+/firm-* command family registers every drill target as its own slash
+command so the areas are selectable from the composer's menu. No
+lifecycle hooks; there is no process gate to enforce here, only
+domain knowledge and a practice-profile config to read.
 """
 import logging
 from pathlib import Path
@@ -37,6 +38,13 @@ def register(ctx):
         description="Load a legal practice area (roster or <area>)",
         args_hint="[<area>]",
     )
+    # The /firm-* family: one command per drill target. Plugin commands
+    # are listed in the slash popover with their descriptions, so this
+    # makes the departments/states selectable from the command menu —
+    # no typed argument needed.
+    for name, handler, description in commands.drill_commands():
+        _safe(lambda n=name, h=handler, d=description:
+              ctx.register_command(n, h, description=d))
 
     skills_dir = _HERE / "skills"
     if skills_dir.is_dir():
