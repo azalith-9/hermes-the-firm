@@ -15,7 +15,7 @@ And somewhere else, somebody with a real legal problem — an eviction, a denied
 
 **This is the other thing.**
 
-hermes-the-firm is a legal practice — the whole organism — loaded into [Hermes Agent](https://github.com/NousResearch/hermes-agent), an AI that runs on *your* machine and works for *you*. Not a chatbot with a lawyer costume. A firm. With departments, and a library, and rules, and — this is the part nobody else does — the actual text of the actual law, sitting on your disk, quotable.
+hermes-the-firm is a legal assistant — the whole organism — loaded into [Hermes Agent](https://github.com/NousResearch/hermes-agent), an AI that runs on *your* machine and works for *you*. Not a chatbot with a lawyer costume. A firm. With departments, and a library, and rules, and — this is the part nobody else does — the actual text of the actual law, sitting on your disk, quotable.
 
 Here's the breakdown, in plain English:
 
