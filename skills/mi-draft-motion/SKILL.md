@@ -16,7 +16,7 @@ description: >
   and signature, `mi-draft-declaration` for sworn facts,
   `mi-draft-order` for the proposed order, `mi-draft-note` for the
   notice of hearing, and the relevant venue overlay.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

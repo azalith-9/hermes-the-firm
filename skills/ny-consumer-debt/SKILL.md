@@ -21,7 +21,7 @@ description: >
   (deceptive acts), CPLR 4544 small-print contracts, chain
   of title under N.Y. UCC Article 9, fact-pattern triage,
   and RFP/RFA banks.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

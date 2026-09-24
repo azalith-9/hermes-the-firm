@@ -12,7 +12,7 @@ description: >
   (Civil), and Juvenile Court; Circuit and Chancery e-filing via
   eFlex; and the local rules of practice published by the Shelby
   County courts. Layer on top of `tn-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

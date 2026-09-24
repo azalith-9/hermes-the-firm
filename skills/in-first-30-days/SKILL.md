@@ -18,7 +18,7 @@ description: >
   "T.R. 12(B)(6)", "Indiana motion to dismiss", "Indiana answer",
   "Indiana affirmative defenses", "T.R. 13 counterclaim", "T.R.
   55 default".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -2,7 +2,7 @@
 name: oh-draft-order
 description: >
   Use to draft an Ohio proposed order. Triggers include 'Ohio proposed order', 'Ohio order granting motion', 'Ohio tendered order', 'Ohio Sup. R. order format'. Produces an Ohio-format proposed order with caption, findings (if applicable), ORDERED clauses, signature line for the Judge, and a date line.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

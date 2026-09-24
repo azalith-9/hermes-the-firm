@@ -15,7 +15,7 @@ description: >
   matter types), Part Rules discovery (CPLR 3408 in foreclosure,
   Preliminary Conference under 22 NYCRR § 202.12), and the
   60 Centre Street + 111 Centre Street courthouses.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

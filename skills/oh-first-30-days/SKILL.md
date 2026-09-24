@@ -2,7 +2,7 @@
 name: oh-first-30-days
 description: >
   Use immediately after Ohio service to triage answer + pre-answer motion options. Triggers include 'Ohio Civ. R. 12 answer', 'Ohio 28 days to answer', 'Ohio Civ. R. 12(B)(6) motion to dismiss', 'Ohio Civ. R. 12(C) judgment on the pleadings', 'Ohio counterclaim', 'Ohio default judgment Civ. R. 55'. Covers the 28-day answer clock under Civ. R. 12(A)(1), the eight Civ. R. 12(B) grounds for pre-answer motion to dismiss, the seven-day post-ruling answer rule, Civ. R. 13 counterclaims, and the *Jarboe v. Landmark* / Twombly-adjacent Ohio pleading standard.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

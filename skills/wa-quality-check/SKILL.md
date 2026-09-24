@@ -13,7 +13,7 @@ description: >
   type and runs motion-specific checks (CR 12(b)(6), CR 37, CR 56,
   CR 60). Composes with `wa-statewide-format`, `wa-kcdc`, and
   `wa-pro-se`.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

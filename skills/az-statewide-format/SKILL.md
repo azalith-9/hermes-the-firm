@@ -21,7 +21,7 @@ description: >
   line-numbered pleading-paper conventions, the running footer,
   and Arizona citation format. It is the canonical home for the
   marketplace layout conventions for Arizona filings.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

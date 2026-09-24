@@ -2,7 +2,7 @@
 name: oh-municipal-courts
 description: >
   Use when filing in an Ohio Municipal Court (R.C. Chapter 1901) — $15,000 civil cap, $6,000 small claims (R.C. 1925), traffic, misdemeanor. Triggers include 'Ohio Municipal Court', 'Cleveland Municipal Court', 'Columbus Municipal Court', 'Cincinnati Municipal Court', 'Akron Municipal Court', 'Ohio small claims', 'R.C. 1901', 'R.C. 1925 small claims', '$15,000 civil Ohio'. Covers the Municipal Court Act + Small Claims Division + the consumer-debt collection dominance of Municipal Court in Ohio.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

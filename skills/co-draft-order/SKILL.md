@@ -12,7 +12,7 @@ description: >
   clause; includes the judge-signature block at the foot and (for
   Colorado practice) a courtesy Word-format version commonly emailed
   separately to chambers.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

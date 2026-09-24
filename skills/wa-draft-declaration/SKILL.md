@@ -11,7 +11,7 @@ description: >
   paragraphs, verification clause, signature block, and optional
   exhibit cover pages. Composes with `wa-statewide-format` (always),
   `wa-kcdc` (if KCDC), and `wa-pro-se` (if the declarant is pro se).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

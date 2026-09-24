@@ -12,7 +12,7 @@ description: >
   exactly, email a Word copy to chambers per practice standards
   (common in 18th JD and several Denver divisions), file the PDF
   through CCEFS, and serve the resulting signed order on all parties.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

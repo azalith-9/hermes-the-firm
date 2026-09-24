@@ -12,7 +12,7 @@ description: >
   magistrate practice), General Sessions Court (Civil), and Juvenile
   Court; and the local rules of practice published by the Knox County
   courts. Layer on top of `tn-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

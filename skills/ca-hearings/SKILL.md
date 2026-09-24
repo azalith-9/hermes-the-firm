@@ -14,7 +14,7 @@ description: >
   remote-appearance rules under CRC 3.672, LACourtConnect (LASC),
   WebEx (other courts), reservation systems, and oral argument
   structure for California law-and-motion practice.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

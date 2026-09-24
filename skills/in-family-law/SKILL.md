@@ -30,7 +30,7 @@ description: >
   Guidelines", "IN equitable distribution", "IC 31-15",
   "IN UCCJEA", "IC 31-21", "Indiana CHINS", "IC 31-34",
   "Indiana adoption", "IC 31-19", "Indiana family law".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

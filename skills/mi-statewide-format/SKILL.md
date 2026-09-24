@@ -21,7 +21,7 @@ description: >
   2.107, line-numbered pleading-paper conventions, the running
   footer, and Michigan citation format. It is the canonical home
   for the marketplace layout conventions for Michigan filings.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

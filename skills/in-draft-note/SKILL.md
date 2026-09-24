@@ -17,7 +17,7 @@ description: >
   of Setting", "Indiana T.R. 73(C)", "Indiana motion docket",
   "schedule motion Indiana", "Marion Notice of Hearing", "Lake
   Notice of Setting".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

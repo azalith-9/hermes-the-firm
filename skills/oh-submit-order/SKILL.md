@@ -2,7 +2,7 @@
 name: oh-submit-order
 description: >
   Use after an Ohio hearing to transmit the signed proposed order. Triggers include 'Ohio post-hearing order', 'submit Ohio proposed order', 'Ohio judgment entry', 'Ohio order transmittal', 'Ohio Sup. R. order submission'. Covers post-hearing order submission to chambers, the file-stamp + Notice of Entry mechanics, and the 30-day App. R. 4(A) appeal clock that runs from file-stamp date.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

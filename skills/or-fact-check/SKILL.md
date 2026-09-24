@@ -25,7 +25,7 @@ description: >
   skill, not a drafting skill** — it flags issues for the user
   and proposes specific corrections, but does not silently
   rewrite the filing without the user's review.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

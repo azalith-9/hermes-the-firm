@@ -15,7 +15,7 @@ description: >
   preflight per the local SLR. Composes with
   `or-quality-check`, `or-fact-check`, `or-schedule-hearing`,
   and the draft-* skills.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

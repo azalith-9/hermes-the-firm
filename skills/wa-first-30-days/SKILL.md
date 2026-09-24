@@ -22,7 +22,7 @@ description: >
   wa-draft-motion, wa-draft-declaration, wa-discovery,
   wa-law-references, wa-fact-check, wa-file-packet, and (if default
   already entered) wa-post-judgment.
-version: 0.3.1
+version: 0.4.0
 ---
 
 <!--

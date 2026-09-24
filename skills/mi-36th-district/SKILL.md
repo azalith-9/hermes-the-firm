@@ -15,7 +15,7 @@ description: >
   as modified for district court, how cases are commenced and noticed,
   MiFILE/MiCOURT e-filing, and the high default-judgment volume in
   consumer-debt cases. Layer on top of `mi-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

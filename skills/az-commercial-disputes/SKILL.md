@@ -33,7 +33,7 @@ description: >
   fraud-with-particularity pleading, and the Revised Uniform
   Arbitration Act at A.R.S. § 12-3001 et seq. plus FAA-preemption
   practice.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

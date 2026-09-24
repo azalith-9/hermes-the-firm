@@ -27,7 +27,7 @@ description: >
   proposes corrections, but does not silently rewrite the filing.
   Composes with ca-quality-check (format pass), ca-law-references
   (citation conventions), and the draft-* skills.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

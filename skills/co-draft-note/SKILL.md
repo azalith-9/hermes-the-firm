@@ -15,7 +15,7 @@ description: >
   echoed to the parties), Notice of Withdrawal, Notice of Filing,
   Notice of Substitution of Counsel, and similar party-filed
   notices.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

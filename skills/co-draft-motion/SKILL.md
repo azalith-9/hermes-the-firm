@@ -13,7 +13,7 @@ description: >
   required certificates). Composes with `co-statewide-format` for
   format, `co-draft-declaration` for sworn facts, `co-draft-order`
   for the proposed order, and the relevant court overlay.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

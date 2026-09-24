@@ -2,7 +2,7 @@
 name: oh-quality-check
 description: >
   Use to run pre-filing QC on an Ohio filing — format compliance + content consistency. Triggers include 'Ohio quality check', 'pre-filing review Ohio', 'verify Ohio filing format', 'Ohio QC'. Two-pass: (1) format compliance using format-check.py (caption, margins, fonts, line spacing, footer); (2) content consistency using oh-fact-check's four-pass framework.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

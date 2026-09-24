@@ -15,7 +15,7 @@ description: >
   (`ca-lasc`, `ca-sfsc`, or `ca-county-courts`). For post-hearing
   signed-order transmission with bench modifications applied, use
   `ca-submit-order` instead.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

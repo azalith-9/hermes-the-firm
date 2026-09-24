@@ -27,7 +27,7 @@ description: >
   for debt-collection cases). Composes with ca-deadlines, ca-draft-
   motion, ca-draft-declaration, ca-quality-check, ca-fact-check,
   ca-file-packet, and (if default already entered) ca-post-judgment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

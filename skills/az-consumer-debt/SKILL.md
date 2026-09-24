@@ -13,7 +13,7 @@ description: >
   chain-of-title doctrine under Arizona UCC Article 9, the statute-of-limitations framework
   (including the *Mertola* credit-card acceleration rule), the two-way attorney-fee exposure under
   A.R.S. § 12-341.01, and the Justice Court forum.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

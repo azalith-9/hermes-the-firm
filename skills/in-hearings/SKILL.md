@@ -15,7 +15,7 @@ description: >
   Trigger phrases: "Indiana hearing prep", "Marion oral argument",
   "Lake bench trial", "Webex Indiana", "Admin Rule 14", "Indiana
   courtroom protocol", "evidentiary hearing Indiana".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

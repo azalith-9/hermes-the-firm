@@ -15,7 +15,7 @@ description: >
   interrogatories, the General Sessions "no formal discovery as of
   right" rule, meet-and-confer, and the motion-to-compel / sanctions
   workflow.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

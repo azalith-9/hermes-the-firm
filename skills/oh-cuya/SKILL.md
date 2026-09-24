@@ -2,7 +2,7 @@
 name: oh-cuya
 description: >
   Use when drafting or filing in Cuyahoga County Court of Common Pleas (Cleveland). Triggers include the court name, its case number format, and local-rule references. Layers on top of `oh-statewide-format`.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

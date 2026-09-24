@@ -25,7 +25,7 @@ description: >
   Supreme Court (`ny-nyco`, `ny-kings`, etc.) — Civil Court
   is a separate court with its own jurisdictional ceiling
   and its own filing system.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

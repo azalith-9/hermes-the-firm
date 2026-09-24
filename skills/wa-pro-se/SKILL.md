@@ -9,7 +9,7 @@ description: >
   drafting framework, service protocols for pro se filers, common
   pitfalls, and signature block conventions. Layer on top of
   wa-statewide-format and (if applicable) wa-kcdc.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

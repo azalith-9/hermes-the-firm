@@ -14,7 +14,7 @@ description: >
   meet-and-confer obligations under C.R.C.P. 121 § 1-12 and § 1-15(8),
   and the county-court simplified discovery framework under C.R.C.P.
   311.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

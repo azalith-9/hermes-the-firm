@@ -23,7 +23,7 @@ description: >
   Michigan reference corpora (court-rules, mi-statutes-debt) live in this
   skill's `references/` subdirectory, and federal/UCC text is served by the
   firm's open-us-law corpus via the `us-statute-lookup` skill.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

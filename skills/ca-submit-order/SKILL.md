@@ -17,7 +17,7 @@ description: >
   of Entry workflow that triggers the CRC 8.104 appeal clock.
   Layers on top of `ca-draft-order` for the order body and
   `ca-statewide-format` for caption / footer compliance.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

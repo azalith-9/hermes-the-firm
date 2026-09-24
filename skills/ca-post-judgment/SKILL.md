@@ -24,7 +24,7 @@ description: >
   (satisfaction of judgment including the 15-day demand procedure).
   Composes with ca-deadlines, ca-draft-motion, ca-draft-declaration,
   ca-quality-check, ca-fact-check, and ca-file-packet.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

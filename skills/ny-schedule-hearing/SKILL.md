@@ -13,7 +13,7 @@ description: >
   IAS Part's protocol and the relevant Justice's Part Rules.
   In New York, Justices' Part Rules govern motion scheduling
   — there is no central motion calendar after IAS assignment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

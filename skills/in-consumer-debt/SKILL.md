@@ -23,7 +23,7 @@ description: >
   title Indiana", "IC 24-5-0.5", "Indiana wage garnishment",
   "Midland Indiana", "Portfolio Recovery Indiana", "Cavalry
   SPV Indiana".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

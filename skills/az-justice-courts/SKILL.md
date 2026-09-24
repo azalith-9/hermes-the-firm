@@ -20,7 +20,7 @@ description: >
   e-filing, the high default-judgment volume in debt cases, and the
   appeal to Superior Court under A.R.S. § 22-261. Layer on top of
   `az-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

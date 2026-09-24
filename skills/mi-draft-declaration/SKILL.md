@@ -15,7 +15,7 @@ description: >
   MCR 1.109(D)(3) verification block as the alternative. Composes with
   `mi-statewide-format` for the caption, `mi-draft-motion` for the
   supported motion, and `mi-draft-order` for the proposed order.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

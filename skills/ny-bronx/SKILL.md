@@ -10,7 +10,7 @@ description: >
   high-volume personal-injury actions and the historic
   reputation for plaintiff-favorable jury verdicts — plus
   IAS Part routing and the 851 Grand Concourse courthouse.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

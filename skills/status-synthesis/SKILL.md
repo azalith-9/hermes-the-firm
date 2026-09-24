@@ -1,7 +1,7 @@
 ---
 name: status-synthesis
 description: Generate a weekly or daily status synthesis (newsletter, partner update, client check-in, board memo) from team activity in Slack, Linear/Jira, email, and shared docs. Distinguish meaningful wins from busy work, stay non-sycophantic, and produce a draft a senior lawyer can edit and send. Auto-invokes when the user mentions weekly newsletter, status update, Friday update, partner brief, board memo, or "what did the team do this week."
-version: 1.0.0
+version: 0.4.0
 ---
 
 <!--

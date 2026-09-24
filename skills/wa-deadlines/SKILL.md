@@ -18,7 +18,7 @@ description: >
   this skill does NOT enumerate them. The substantive rules + RCW
   text live in `wa-law-references/references/court-rules/` and
   `wa-law-references/references/wa-rcw-debt/`.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

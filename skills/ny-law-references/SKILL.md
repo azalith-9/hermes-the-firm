@@ -17,7 +17,7 @@ description: >
   online sources, and a key-cases reference. **Canonical
   reference corpora live in this skill's references/
   directory.**
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

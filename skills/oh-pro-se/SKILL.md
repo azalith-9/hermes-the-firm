@@ -2,7 +2,7 @@
 name: oh-pro-se
 description: >
   Use to draft Ohio pro se filings. Triggers include 'Ohio pro se', 'self-represented Ohio', 'Ohio without a lawyer', 'represent myself Ohio Common Pleas', 'Ohio Municipal Court pro se', 'Ohio Self-Help Center'. Covers the Ohio pro-se drafting framework, signature-block conventions (no attorney registration number), affidavit vs. declaration terminology (R.C. 2319.04 affidavit is the Ohio form), Ohio Self-Help Center catalog, and tone conventions for pro-se litigants.
-version: 0.2.1
+version: 0.4.0
 ---
 
 <!--

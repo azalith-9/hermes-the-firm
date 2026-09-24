@@ -28,7 +28,7 @@ description: >
   "RCW 23B", "WA UCC", "RCW 62A", "WA dissenter's
   rights", "WA judicial dissolution LLC", "Washington
   MAR", "RCW 7.06".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

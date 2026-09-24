@@ -2,7 +2,7 @@
 name: oh-family-court
 description: >
   Use when filing in Ohio family court — Domestic Relations Division of Common Pleas (divorce + married-parent custody/support) OR Juvenile Division of Common Pleas (unmarried-parent custody + child-support enforcement + abuse/neglect under R.C. Chapter 2151). Triggers include 'Ohio family court', 'Ohio Domestic Relations', 'Ohio Juvenile Court', 'R.C. Chapter 3105', 'R.C. Chapter 3109', 'R.C. Chapter 3119', 'R.C. Chapter 2151', 'Ohio CSEA child support', 'Ohio parental rights', 'Ohio custody', 'Ohio CPS'. Covers both divisions, support magistrate practice, guardian ad litem appointments under Sup. R. 48, and the right to assigned counsel in abuse/neglect cases.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

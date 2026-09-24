@@ -11,7 +11,7 @@ description: >
   ("Jefferson County", "El Paso County", "Boulder County"), JD
   numbers ("1st JD", "4th JD", "20th JD"), and specific courthouse
   names. Layer on top of `co-statewide-format`.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

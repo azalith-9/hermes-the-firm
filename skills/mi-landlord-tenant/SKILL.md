@@ -21,7 +21,7 @@ description: >
   Act (MCL 554.631+), the statutory covenant of fitness (MCL
   554.139), retaliatory eviction (MCL 600.5720), and the
   post-judgment 10-day stay before the order of eviction.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

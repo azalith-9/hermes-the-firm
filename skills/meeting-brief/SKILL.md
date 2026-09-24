@@ -1,7 +1,7 @@
 ---
 name: meeting-brief
 description: Prepare a comprehensive meeting brief by pulling from calendar, email, and shared drives. Identify attendees and their roles, surface relevant past correspondence, flag open issues and outstanding action items, and produce a partner-readable brief. Auto-invokes when the user mentions preparing for a meeting, "what do I need to know about my 2pm," upcoming calls, deal team prep, or QBRs.
-version: 1.0.0
+version: 0.4.0
 ---
 
 <!--

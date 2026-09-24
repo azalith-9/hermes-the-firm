@@ -25,7 +25,7 @@ description: >
   layout conventions and the key point that Tennessee has no
   statewide page/margin/font rule — typography and page limits come
   from each court's LOCAL RULES.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

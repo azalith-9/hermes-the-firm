@@ -16,7 +16,7 @@ description: >
   `tn-draft-declaration` for sworn facts, `tn-draft-order` for the
   proposed order, `tn-draft-note` for the Notice of Hearing, and the
   relevant venue overlay.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

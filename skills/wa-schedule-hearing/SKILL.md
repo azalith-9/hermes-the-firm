@@ -11,7 +11,7 @@ description: >
   → e-file within clerk's deadline). The Note for Motion Docket and
   packet are handled by `wa-draft-note` and `wa-file-packet` after
   the clerks issue the date.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

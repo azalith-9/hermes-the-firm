@@ -15,7 +15,7 @@ description: >
   Ann. § 15-1-101 legal holidays, and maps named rules (answer-due,
   general-sessions-appeal 10 days, summary-judgment-service, motion to
   alter or amend, statutes of limitations) to days plus authority.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

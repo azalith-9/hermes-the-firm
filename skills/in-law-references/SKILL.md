@@ -18,7 +18,7 @@ description: >
   Trial R.", "Ind. Evid. R.", "Indiana Code lookup", "IC SOL",
   "Indiana filing fees", "Indiana legal holidays", "Indiana
   citation format", "small claims rules Indiana".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

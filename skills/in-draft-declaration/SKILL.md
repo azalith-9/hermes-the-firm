@@ -14,7 +14,7 @@ description: >
   "T.R. 11(B)", "Indiana affidavit", "Indiana verified statement",
   "Indiana sworn declaration", "affirm under penalties for
   perjury".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -9,7 +9,7 @@ description: >
   filing procedures, and the two-step motion-docket scheduling protocol
   (CivilMGT email request → clerk-issued date → e-filing within the
   clerk's deadline). Layer on top of the wa-statewide-format skill.
-version: 0.1.2
+version: 0.4.0
 ---
 
 <!--

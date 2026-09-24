@@ -22,7 +22,7 @@ description: >
   summary judgment, and post-judgment). Deterministic date arithmetic
   is delegated to scripts/case-calendar.py. Composes with
   ca-first-30-days, ca-discovery, ca-post-judgment, and ca-file-packet.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -15,7 +15,7 @@ description: >
   propose dates. Trigger phrases: "Indiana JA email", "Marion
   hearing setting", "Lake hearing date request", "Indiana
   courtroom secretary contact", "schedule Marion motion hearing".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

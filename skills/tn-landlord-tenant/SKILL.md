@@ -29,7 +29,7 @@ description: >
   security deposits at § 66-28-301, the warranty of habitability
   under § 66-28-304, the self-help eviction prohibition, retaliation
   protections, fair-housing overlay, and the tenant-defense posture.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

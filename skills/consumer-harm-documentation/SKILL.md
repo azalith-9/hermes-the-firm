@@ -28,7 +28,7 @@ description: >
   consumer-credit-disputes, consumer-report-accuracy,
   consumer-credit-monitoring, the state *-consumer-debt bundles, and
   the state *-pro-se skills.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

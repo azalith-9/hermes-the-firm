@@ -17,7 +17,7 @@ description: >
   Trigger phrases: "Indiana fact-check", "verify Ind. Trial R.
   cite", "check IC citation", "Indiana cite verification",
   "audit Indiana brief".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

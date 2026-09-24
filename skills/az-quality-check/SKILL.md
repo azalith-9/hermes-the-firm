@@ -18,7 +18,7 @@ description: >
   vs. ARFLP vs. JCRCP), and required attachments including a proposed
   form of order for motions. Lighter touch than az-fact-check, which
   goes deep on evidentiary citations and sworn-versus-argued alignment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

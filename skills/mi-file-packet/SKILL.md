@@ -16,7 +16,7 @@ description: >
   MCR 1.109(D)(9) protected-personal-identifying-information
   redaction rule, the filing-fee question and the MC 20 fee waiver,
   and the difference between filing and service.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

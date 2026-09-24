@@ -17,7 +17,7 @@ description: >
   § 25-a holidays, and CPLR 2103(b)(2) 5-day mail rule —
   the most-mistaken rule for filers used to the 3-day
   federal mail rule.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -14,7 +14,7 @@ description: >
   `wa-statewide-format`, `wa-kcdc`, `wa-quality-check`, and
   `wa-deadlines`. For the initial pre-hearing proposed order, use
   `wa-draft-order`.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

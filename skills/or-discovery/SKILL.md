@@ -22,7 +22,7 @@ description: >
   of title) live with the relevant subject-matter skill (e.g.,
   or-consumer-debt). Compose with or-statewide-format, or-pro-se,
   or-law-references, or-draft-motion, and or-fact-check.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

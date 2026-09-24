@@ -12,7 +12,7 @@ description: >
   references, and the required verification language. Colorado
   permits unsworn declarations under § 13-27-104 in lieu of notarized
   affidavits in most contexts, mirroring 28 U.S.C. § 1746.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -17,7 +17,7 @@ description: >
   grounds, CPLR 3018 affirmative defenses, CPLR 3019
   counterclaims, and the New York consumer-credit pleading
   threshold under CPLR 3015(e) (CCFA 2022).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -11,7 +11,7 @@ description: >
   numbered paragraphs, line-numbered pleading paper, signature
   blocks, exhibit lists and cover pages, and citation format per
   the Oregon Appellate Courts Style Manual.
-version: 0.3.0
+version: 0.4.0
 ---
 
 <!--

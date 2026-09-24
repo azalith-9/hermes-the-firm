@@ -16,7 +16,7 @@ description: >
   separately-or-waived trap, summary disposition under MCR 2.116, the
   MCR 2.603 default and set-aside standard, MCR 2.203 joinder of claims
   and the compulsory-claim rule, and MCR 2.508 jury demand timing.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

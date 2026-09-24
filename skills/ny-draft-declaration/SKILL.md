@@ -16,7 +16,7 @@ description: >
   NY civil practice. This skill is named draft-declaration
   for filename consistency but produces NY-correct
   affirmations/affidavits.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

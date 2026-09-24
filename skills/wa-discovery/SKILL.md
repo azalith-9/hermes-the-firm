@@ -17,7 +17,7 @@ description: >
   subject-matter skill (e.g., wa-consumer-debt). Compose with
   wa-statewide-format, wa-pro-se, wa-law-references, wa-draft-motion,
   and wa-fact-check.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

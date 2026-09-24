@@ -13,7 +13,7 @@ description: >
   **clerk-issued-date preflight** — the packet does not go out the
   door until a CivilMGT confirmation is in hand. Composes with
   `wa-quality-check`, `wa-schedule-hearing`, and the draft-* skills.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

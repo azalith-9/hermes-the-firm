@@ -25,7 +25,7 @@ description: >
   protection order", "WA UCCJEA", "RCW 26.27", "WA UIFSA",
   "RCW 26.21A", "WA parentage UPA", "RCW 26.26A",
   "Washington dissolution", "WA family court".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

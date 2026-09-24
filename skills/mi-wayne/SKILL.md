@@ -14,7 +14,7 @@ description: >
   case-type codes, the Michigan Business Court designation, the
   local praecipe motion-scheduling practice, and MiFILE/TrueFiling
   e-filing. Layer on top of `mi-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

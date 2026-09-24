@@ -15,7 +15,7 @@ description: >
   channel and whether it is mandatory in the venue, the Arizona
   sensitive-data redaction rule, the filing-fee question and the
   A.R.S. § 12-302 deferral/waiver, and paper filing where applicable.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

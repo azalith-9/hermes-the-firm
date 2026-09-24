@@ -1,7 +1,7 @@
 ---
 name: wa-post-judgment
 description: Navigate post-judgment procedures in Washington State — motions to vacate under CR 60, garnishment under RCW 6.27, supplemental proceedings, exemption claims, and satisfaction of judgment. Use when the user asks about vacating a default judgment, responding to a wage garnishment or bank levy, exempting property from collection, answering supplemental interrogatories, or filing a satisfaction of judgment.
-version: 0.2.1
+version: 0.4.0
 ---
 
 <!--

@@ -11,7 +11,7 @@ description: >
   Runs four passes: citation verification, internal
   consistency, packet consistency, and sworn-vs.-argued
   consistency.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

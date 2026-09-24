@@ -16,7 +16,7 @@ description: >
   with `az-statewide-format` for the caption and signature,
   `az-draft-declaration` for sworn facts, `az-draft-order` for the
   proposed form of order, and the relevant venue overlay.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

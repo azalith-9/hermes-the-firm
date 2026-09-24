@@ -2,7 +2,7 @@
 name: oh-post-judgment
 description: >
   Use for Ohio post-judgment procedure — motion to vacate, motion for new trial, judgment enforcement, garnishment, debtor's exam, exemptions, satisfaction of judgment. Triggers include 'Ohio motion to vacate Civ. R. 60', 'Ohio motion for new trial Civ. R. 59', 'Ohio garnishment', 'Ohio debtor's exam', 'R.C. 2329 exemptions', 'Ohio judgment renewal R.C. 2329.07', 'Ohio satisfaction of judgment'. Covers Civ. R. 59/60 motions, R.C. Chapter 2329 enforcement, R.C. 2329.66 exemptions schedule, R.C. Chapter 2333 supplemental proceedings, and the 5-year SOL on judgment enforcement at R.C. 2329.07.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

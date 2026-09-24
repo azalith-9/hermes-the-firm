@@ -19,7 +19,7 @@ description: >
   supplemental", "Indiana wage garnishment", "garnishment
   exemption", "Indiana judgment lien", "Indiana homestead
   exemption $22,750".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

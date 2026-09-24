@@ -14,7 +14,7 @@ description: >
   scheduling and pretrial conferences under MCR 2.401, the ADR /
   case-evaluation track (MCR 2.403 / 2.410 / 2.411), courtroom
   etiquette, and the hearing-day packet.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

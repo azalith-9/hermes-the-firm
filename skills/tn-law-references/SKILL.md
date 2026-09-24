@@ -18,7 +18,7 @@ description: >
   the heavy reference corpora (court-rules, tn-statutes-debt,
   federal-debt-laws, federal-bankruptcy, ucc-model) live in this
   skill's `references/` subdirectory.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

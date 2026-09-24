@@ -16,7 +16,7 @@ description: >
   motion to compel under CPLR 3124, the Preliminary
   Conference and Compliance Conference framework, and the
   CPLR 3101 "material and necessary" disclosure scope.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

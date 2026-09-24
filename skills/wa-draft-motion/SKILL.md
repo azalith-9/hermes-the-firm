@@ -12,7 +12,7 @@ description: >
   with `wa-statewide-format` (always), `wa-kcdc` (if KCDC),
   `wa-pro-se` (if pro se), and `wa-discovery` / `wa-post-judgment`
   depending on the motion type.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

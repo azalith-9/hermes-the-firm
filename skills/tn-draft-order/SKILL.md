@@ -15,7 +15,7 @@ description: >
   state the legal grounds for the ruling. Composes with
   `tn-statewide-format` for the caption, `tn-draft-motion` for the
   underlying motion, and `tn-submit-order` for the transmittal workflow.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

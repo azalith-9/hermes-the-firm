@@ -14,7 +14,7 @@ description: >
   Represented" / "Help Center" infrastructure (CLARO clinics,
   the NY Courts CourtHelp portal, and the LawHelpNY referral
   network).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

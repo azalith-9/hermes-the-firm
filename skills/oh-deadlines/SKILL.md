@@ -2,7 +2,7 @@
 name: oh-deadlines
 description: >
   Use to compute Ohio court deadlines — Civ. R. 6 time computation, R.C. 1.14 legal holidays, named-rule catalog. Triggers include 'Ohio deadline', 'Ohio Civ. R. 6 time computation', 'R.C. 1.14 holidays', 'Ohio SOL', 'Ohio statute of limitations', 'when is my Ohio answer due', 'Ohio judgment renewal deadline'. Covers the Civ. R. 6 time-computation framework, R.C. 1.45 weekend-roll-forward, R.C. 1.14 holiday catalog (including Columbus Day still observed in Ohio), and the named-rule catalog (28-day answer, 6-year written-contract SOL, 2-year CSPA SOL, 5-year judgment enforcement SOL, etc.).
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

@@ -16,7 +16,7 @@ description: >
   Layers on top of `ca-deadlines` for service-deadline
   back-computation, and on `ca-lasc` / `ca-sfsc` /
   `ca-county-courts` for venue-specific protocols.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

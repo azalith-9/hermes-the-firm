@@ -2,7 +2,7 @@
 name: oh-hearings
 description: >
   Use to prepare for Ohio court hearings — oral argument, case-management conferences, evidentiary hearings, remote-appearance protocols. Triggers include 'Ohio court hearing', 'Common Pleas oral argument', 'Ohio Civ. R. 53 magistrate', 'Ohio remote hearing', 'Ohio video conferencing court', 'pretrial conference Ohio'. Covers oral-argument conventions, the Civ. R. 53 magistrate process with the 14-day objection clock, remote-appearance practice (Cisco Webex statewide default but per-judge variations).
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

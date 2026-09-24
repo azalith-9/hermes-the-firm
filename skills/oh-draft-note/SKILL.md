@@ -2,7 +2,7 @@
 name: oh-draft-note
 description: >
   Use to draft an Ohio Notice of Hearing. Triggers include 'Ohio notice of hearing', 'Ohio Civ. R. 7 notice', 'Ohio Civ. R. 56(C) summary judgment notice', 'Ohio motion hearing notice'. **Skill name is 'note' for filename consistency across the marketplace; the output is an Ohio 'Notice of Hearing'.**
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

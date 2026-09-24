@@ -15,7 +15,7 @@ description: >
   Protection Act (MCL 445.901 et seq.) and its judicially narrowed regulated-conduct exemption,
   chain-of-title doctrine under Michigan UCC Article 9, the SOL framework, and the District Court
   forum.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

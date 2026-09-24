@@ -2,7 +2,7 @@
 name: oh-draft-motion
 description: >
   Use to draft an Ohio civil motion. Triggers include 'Ohio motion', 'draft Ohio motion to compel', 'Ohio Civ. R. 56 motion for summary judgment', 'Ohio Civ. R. 12 motion to dismiss', 'Ohio Civ. R. 60 motion to vacate', 'Ohio Civ. R. 37 motion to compel'. Produces an Ohio-format motion with caption, statement of grounds, memorandum in support, certificate of service, and tendered proposed order.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

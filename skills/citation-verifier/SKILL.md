@@ -1,7 +1,7 @@
 ---
 name: citation-verifier
 description: Round-trip every citation and quoted phrase in a legal output against the source document. Flag mismatches, fabricated cites, paraphrases passed off as quotes, and unsupported assertions. Auto-invokes before any legal output is filed externally, when the user asks to verify cites, or when the user mentions briefs, motions, memos to clients, court filings, or regulatory submissions.
-version: 1.0.0
+version: 0.4.0
 ---
 
 <!--

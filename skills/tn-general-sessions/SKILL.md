@@ -17,7 +17,7 @@ description: >
   applicable), the absence of formal discovery as of right, and the
   10-day de novo appeal route to Circuit Court. Layer on top of
   `tn-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -20,7 +20,7 @@ description: >
   13 compulsory and permissive counterclaims, Rule 38 jury demand, and —
   prominently — the Rules 72-77 compulsory-arbitration program for cases
   under the county's jurisdictional limit.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

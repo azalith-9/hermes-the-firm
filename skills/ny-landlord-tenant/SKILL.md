@@ -21,7 +21,7 @@ description: >
   ERAP / Emergency Rental Assistance, and NYC Housing Court
   practice including the Tenant Defense Center / right to
   counsel under NYC Admin Code § 26-1301.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -20,7 +20,7 @@ description: >
   Judicial Council form version, and correct tentative-ruling
   protocol if applicable. Composes with ca-statewide-format and
   the relevant court skill (ca-lasc, ca-sfsc, ca-county-courts).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

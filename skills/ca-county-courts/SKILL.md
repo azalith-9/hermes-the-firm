@@ -19,7 +19,7 @@ description: >
   for San Francisco use `ca-sfsc`. Layer on top of
   `ca-statewide-format`, and consult `ca-law-references` for
   statutory text.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

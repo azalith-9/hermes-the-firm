@@ -16,7 +16,7 @@ description: >
   the Commercial Court specialty calendar, complex-case
   assignment, AZTurboCourt e-filing, and Maricopa case-type /
   case-number conventions. Layer on top of `az-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

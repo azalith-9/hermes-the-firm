@@ -23,7 +23,7 @@ description: >
   "Spokane Superior Court", "SLR", "Spokane local
   rules", "Spokane e-filing", "Spokane family law",
   "Spokane MAR", "Division III Court of Appeals".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

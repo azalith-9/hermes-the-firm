@@ -28,7 +28,7 @@ description: >
   (§§ 36-6-401 et seq., 36-6-106), relocation (§ 36-6-108), UCCJEA
   (§ 36-6-201 et seq.), UIFSA (§ 36-5-2001 et seq.), and orders of
   protection (§ 36-3-601 et seq.).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

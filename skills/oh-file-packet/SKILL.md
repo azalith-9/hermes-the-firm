@@ -2,7 +2,7 @@
 name: oh-file-packet
 description: >
   Use to assemble an Ohio court filing packet. Triggers include 'assemble Ohio filing packet', 'Ohio filing checklist', 'Ohio Common Pleas eFiling', 'Ohio Municipal Court eFiling', 'Ohio certificate of service', 'Ohio working copy'. Covers e-filing (most Common Pleas courts use county-specific systems), pre-flight checks, exhibit organization, and per-court working-copy conventions.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

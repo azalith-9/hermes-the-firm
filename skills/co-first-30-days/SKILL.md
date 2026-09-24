@@ -12,7 +12,7 @@ description: >
   C.R.C.P. 12(b) motion-to-dismiss triage, affirmative defenses
   catalog including consumer-protection-act defenses, counterclaim
   and cross-claim mechanics, and the default-judgment risk timeline.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

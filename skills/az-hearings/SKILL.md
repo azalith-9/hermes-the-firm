@@ -16,7 +16,7 @@ description: >
   conferences under Rule 16, the comprehensive pretrial conference,
   compulsory-arbitration hearings under Rules 72-77, courtroom etiquette,
   and the hearing-day packet.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -16,7 +16,7 @@ description: >
   default-judgment relief, and the rule that only a judge signs.
   Composes with `az-statewide-format` for the caption and `az-submit-order`
   for the transmittal workflow.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

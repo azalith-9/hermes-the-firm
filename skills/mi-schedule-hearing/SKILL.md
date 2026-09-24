@@ -16,7 +16,7 @@ description: >
   differently. This skill produces a scheduling-request plan plus a
   notice-of-hearing plan and routes to the venue skills for the
   court-specific mechanics.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -16,7 +16,7 @@ description: >
   motion). Composes with `or-statewide-format` (always) and the
   relevant court skill (`or-multcc`, `or-wccc`, or
   `or-county-courts`).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

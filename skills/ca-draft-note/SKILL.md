@@ -14,7 +14,7 @@ description: >
   § 1005(b) and confirming opposition and reply due dates.
   Composes with `ca-statewide-format` (always) and the relevant
   court skill (`ca-lasc`, `ca-sfsc`, or `ca-county-courts`).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

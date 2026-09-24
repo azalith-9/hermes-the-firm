@@ -16,7 +16,7 @@ description: >
   `ca-statewide-format`, `ca-draft-motion`, `ca-draft-note`,
   `ca-draft-declaration`, `ca-draft-order`, `ca-quality-check`,
   and the venue-specific skill.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

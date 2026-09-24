@@ -20,7 +20,7 @@ description: >
   cap), `ny-city-courts` (upstate UCCA City Courts $15k
   cap), `ny-justice-courts` (Town & Village UJCA Justice
   Courts $3k cap).
-version: 0.3.0
+version: 0.4.0
 ---
 
 <!--

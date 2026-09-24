@@ -23,7 +23,7 @@ description: >
   comparative fault", "RCW 4.22", "WA wrongful death",
   "RCW 4.20", "WA Notice of Tort Claim", "RCW 4.92",
   "RCW 4.96".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

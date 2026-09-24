@@ -14,7 +14,7 @@ description: >
   hearing date after a request. Composes with `az-statewide-format` for
   the caption, `az-schedule-hearing` for obtaining or coordinating the
   date, and `az-draft-motion` for the underlying motion.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

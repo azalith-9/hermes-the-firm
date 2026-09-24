@@ -30,7 +30,7 @@ description: >
   or-pro-se, or-law-references, or-discovery, or-first-30-days,
   or-fact-check, or-deadlines, or-post-judgment, and all
   draft-* skills).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

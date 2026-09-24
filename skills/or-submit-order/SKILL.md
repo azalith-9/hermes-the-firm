@@ -16,7 +16,7 @@ description: >
   (`or-multcc`, `or-wccc`, `or-county-courts`),
   `or-quality-check`, and `or-deadlines`. For the initial pre-
   hearing proposed order, use `or-draft-order`.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

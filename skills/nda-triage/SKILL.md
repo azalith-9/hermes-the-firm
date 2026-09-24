@@ -1,7 +1,7 @@
 ---
 name: nda-triage
 description: Triage incoming NDAs against a firm playbook. Classify each NDA as red/yellow/green risk, identify non-standard clauses, surface the highest-risk items for human review, and produce a partner-readable triage report. Auto-invokes when the user mentions NDAs, non-disclosure agreements, mutual NDAs, confidentiality agreements, or asks to triage a folder of incoming contracts.
-version: 1.0.0
+version: 0.4.0
 ---
 
 <!--

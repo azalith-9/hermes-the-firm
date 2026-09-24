@@ -17,7 +17,7 @@ description: >
   mandatory eFiling through File & ServeXpress, the SFSC ADR
   program, and case management conferences. Layer on top of
   `ca-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

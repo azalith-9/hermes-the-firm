@@ -17,7 +17,7 @@ description: >
   (with Colorado attorney-registration number when applicable),
   exhibit lists, and citation format per the Colorado Appellate
   Court conventions and the ICW Style Manual.
-version: 0.6.0
+version: 0.4.0
 ---
 
 <!--

@@ -23,7 +23,7 @@ description: >
   wa-consumer-debt (the CPA / Hangman Ridge framework), wa-first-30-days,
   wa-discovery, wa-draft-motion / -declaration, wa-law-references,
   wa-statewide-format, and wa-pro-se.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

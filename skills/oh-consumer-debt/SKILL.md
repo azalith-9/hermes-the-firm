@@ -24,7 +24,7 @@ description: >
   "Ohio chain of title", "Ohio statute of limitations debt",
   "R.C. 2305.06", "Ohio FDCPA counterclaim", "medical debt
   Ohio", "Ohio credit card lawsuit defense".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

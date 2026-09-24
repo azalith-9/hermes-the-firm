@@ -13,7 +13,7 @@ description: >
   (which varies by court — defer to local rules and standing orders),
   courtroom etiquette before Tennessee judges, and the hearing-day
   packet.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

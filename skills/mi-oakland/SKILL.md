@@ -15,7 +15,7 @@ description: >
   administrative orders and case-management / scheduling-order
   practice, and MiFILE / MiCOURT TrueFiling e-filing. Layer on
   top of `mi-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

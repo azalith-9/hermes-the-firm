@@ -13,7 +13,7 @@ description: >
   courtroom etiquette in NY Supreme Court Parts, the
   distinction between "submitted" and "argued" motions, and
   hearing-day checklists.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

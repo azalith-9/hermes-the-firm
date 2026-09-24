@@ -23,7 +23,7 @@ description: >
   "RCW 49.62", "WA workers compensation L&I", "WA pay
   transparency", "RCW 49.58", "WA discrimination at
   work".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

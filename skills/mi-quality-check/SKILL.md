@@ -18,7 +18,7 @@ description: >
   completeness, attachments, packet consistency. Lighter touch than
   mi-fact-check, which goes deep on evidentiary citations and
   sworn-versus-argued alignment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

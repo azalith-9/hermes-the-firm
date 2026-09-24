@@ -2,7 +2,7 @@
 name: oh-schedule-hearing
 description: >
   Use to schedule an Ohio motion hearing. Triggers include 'Ohio motion hearing scheduling', 'Ohio chambers scheduling', 'Ohio reserve hearing date', 'Common Pleas hearing date Ohio'. Covers the scheduling protocols per Common Pleas court — most require contacting chambers / magistrate's office for a date; some courts use online reservation systems.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

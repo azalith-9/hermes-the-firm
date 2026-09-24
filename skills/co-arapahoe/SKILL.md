@@ -13,7 +13,7 @@ description: >
   from neighboring Douglas County District Court, and the chambers
   preferences for the principal civil divisions. Layer on top of
   `co-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

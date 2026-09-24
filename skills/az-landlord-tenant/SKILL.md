@@ -22,7 +22,7 @@ description: >
   repair-and-deduct (A.R.S. § 33-1363), retaliation (A.R.S.
   § 33-1381), and the Mobile Home Parks Act (A.R.S. § 33-1401 et
   seq.).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

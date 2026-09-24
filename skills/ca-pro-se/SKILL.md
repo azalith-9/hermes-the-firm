@@ -14,7 +14,7 @@ description: >
   In Forma Pauperis fee waivers (FW-001 / FW-003), and California-
   specific pro se resources. Layer on top of ca-statewide-format and
   the applicable county skill (ca-lasc, ca-sfsc, or ca-county-courts).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

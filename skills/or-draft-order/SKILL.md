@@ -12,7 +12,7 @@ description: >
   (`or-multcc`, `or-wccc`, or `or-county-courts`). For post-
   hearing signed-order submission with bench modifications
   applied, use `or-submit-order` instead.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

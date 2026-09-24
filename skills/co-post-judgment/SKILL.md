@@ -12,7 +12,7 @@ description: >
   exemption framework under C.R.S. art. 54 of title 13, supplemental
   proceedings under C.R.C.P. 69, judgment lien recording, judgment
   satisfaction and revival under C.R.S. § 13-52.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -16,7 +16,7 @@ description: >
   so the reader should verify before relying on one. Composes with
   `tn-statewide-format` for the caption, `tn-draft-motion` for the
   supported motion, and `tn-draft-order` for the proposed order.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

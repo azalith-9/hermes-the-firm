@@ -15,7 +15,7 @@ description: >
   before noticing the motion — this varies by county. Composes with
   `tn-statewide-format` for the caption, `tn-schedule-hearing` for
   obtaining the date, and `tn-draft-motion` for the underlying motion.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

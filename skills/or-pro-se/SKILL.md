@@ -12,7 +12,7 @@ description: >
   signature-block convention), and Oregon-specific pro se
   resources. Layer on top of `or-statewide-format` and (if
   applicable) `or-multcc` or `or-wccc`.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

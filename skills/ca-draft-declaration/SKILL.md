@@ -15,7 +15,7 @@ description: >
   Composes with `ca-statewide-format` (always), `ca-lasc` /
   `ca-sfsc` / `ca-county-courts` (court-specific), and `ca-pro-se`
   (if the declarant is pro se).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

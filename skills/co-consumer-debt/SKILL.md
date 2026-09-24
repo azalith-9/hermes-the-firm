@@ -19,7 +19,7 @@ description: >
   licensure under the Administrator of the UCCC (Colorado AG's
   Collection Agency Board), chain-of-title doctrine under Colorado
   UCC Article 9 (C.R.S. art. 9 of title 4), and the SOL framework.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

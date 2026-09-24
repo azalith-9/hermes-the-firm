@@ -15,7 +15,7 @@ description: >
   judgments (garnishment, execution, judgment liens, debtor's
   examination, renewal), the A.R.S. Title 33 exemption framework, and
   satisfaction of judgment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

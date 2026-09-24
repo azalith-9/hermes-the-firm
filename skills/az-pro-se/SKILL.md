@@ -15,7 +15,7 @@ description: >
   and county Law Library Resource Centers, AZTurboCourt e-filing, and
   interpreter / ADA accommodations. Composes with `az-statewide-format`,
   the `az-draft-*` scaffolders, and the venue skills.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

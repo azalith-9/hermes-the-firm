@@ -15,7 +15,7 @@ description: >
   "T.R. 12(B)(6) motion", "T.R. 56 summary judgment", "T.R. 59
   motion to correct error", "T.R. 60(B) motion", "Indiana
   memorandum in support".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

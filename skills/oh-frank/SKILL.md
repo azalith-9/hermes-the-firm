@@ -2,7 +2,7 @@
 name: oh-frank
 description: >
   Use when drafting or filing in Franklin County Court of Common Pleas (Columbus). Triggers include the court name, its case number format, and local-rule references. Layers on top of `oh-statewide-format`.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

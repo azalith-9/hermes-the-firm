@@ -32,7 +32,7 @@ description: >
   Farber, 194 Ariz. 363 (1999), the workers'-compensation
   exclusive remedy at A.R.S. 23-1022, and Arizona's right-to-work
   guarantee (Ariz. Const. art. 25).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

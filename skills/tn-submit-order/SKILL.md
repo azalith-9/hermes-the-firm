@@ -14,7 +14,7 @@ description: >
   order, circulates it to opposing counsel for approval as to form,
   transmits it to the judge with a cover letter, and handles entry
   and clerk distribution after signature.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

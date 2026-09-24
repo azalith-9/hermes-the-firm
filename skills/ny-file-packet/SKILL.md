@@ -14,7 +14,7 @@ description: >
   document-type selection, runs a final format check, and
   produces filing instructions per the specific court's
   e-filing system.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

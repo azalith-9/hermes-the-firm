@@ -16,7 +16,7 @@ description: >
   ORCP 64, ORS 19.255 for appeals), and Oregon debt SOL.
   Deterministic date arithmetic is delegated to
   `scripts/case-calendar.py`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

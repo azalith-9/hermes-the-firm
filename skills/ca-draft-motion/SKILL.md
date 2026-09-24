@@ -15,7 +15,7 @@ description: >
   `ca-sfsc` / `ca-county-courts` (court-specific), `ca-pro-se`
   (if pro se), and `ca-discovery` / `ca-post-judgment` depending
   on the motion type.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

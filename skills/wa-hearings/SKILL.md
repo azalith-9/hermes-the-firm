@@ -1,7 +1,7 @@
 ---
 name: wa-hearings
 description: Prepare for and conduct hearings in Washington State superior court and district court. Use when the user asks about oral argument, motion hearings, Zoom or in-person hearings, courtroom etiquette, what to wear to court, how to address the judge, how to present argument, hearing-day checklist, or how to prepare as a pro se litigant for a hearing.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

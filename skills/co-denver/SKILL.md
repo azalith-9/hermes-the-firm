@@ -13,7 +13,7 @@ description: >
   motion-practice norms (chambers / division assignments, judge's
   preferences), and 2nd JD Administrative Orders. Layer on top of
   `co-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -14,7 +14,7 @@ description: >
   framework under Tenn. Code Ann. Title 26, satisfaction of judgment,
   and the 10-day de novo appeal from General Sessions to Circuit Court
   under Tenn. Code Ann. § 27-5-108.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

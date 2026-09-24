@@ -11,7 +11,7 @@ description: >
   audit'. Runs a two-pass format + content check against 22
   NYCRR § 202.5 (paper), § 202.5-b (NYSCEF), the assigned
   Justice's Part Rules, and the pro-se drafting framework.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -16,7 +16,7 @@ description: >
   Code Ann. § 20-12-119(c) fee-shifting on a 12.02(6) dismissal,
   affirmative defenses, counterclaims under Rule 13, and the
   default-judgment risk timeline.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

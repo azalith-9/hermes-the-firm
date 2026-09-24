@@ -29,7 +29,7 @@ description: >
   §§ 12-821.01 / 12-821), the 2-year personal-injury SOL (A.R.S.
   § 12-542), dog-bite strict liability (A.R.S. §§ 11-1025 / 11-1020),
   and UM/UIM coverage.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

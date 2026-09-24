@@ -31,7 +31,7 @@ description: >
   Guidelines); the bar on common-law marriage (A.R.S. § 25-111);
   and UCCJEA (A.R.S. § 25-1001 et seq.) / UIFSA
   (A.R.S. § 25-1201 et seq.).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

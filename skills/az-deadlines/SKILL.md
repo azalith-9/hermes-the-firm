@@ -15,7 +15,7 @@ description: >
   A.R.S. § 1-301 legal holidays, and maps named rules (answer-due,
   motion-response, motion-for-new-trial, notice-of-appeal, statutes
   of limitations) to days plus authority.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

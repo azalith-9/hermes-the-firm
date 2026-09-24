@@ -11,7 +11,7 @@ description: >
   remote appearances), courtroom etiquette in front of Colorado
   judges, the hearing-day packet, and the judge's-chambers-copy
   conventions that vary by JD and division.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

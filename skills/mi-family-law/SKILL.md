@@ -29,7 +29,7 @@ description: >
   support (MCL 552.23, 552.28); abolition of common-law marriage
   (MCL 551.2); and UCCJEA (MCL 722.1101 et seq.) / UIFSA
   (MCL 552.2101 et seq.).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

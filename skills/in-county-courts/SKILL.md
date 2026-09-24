@@ -16,7 +16,7 @@ description: >
   Superior", "St. Joseph Circuit", "Hamilton County", "Tippecanoe",
   "Monroe Circuit Court", "Indiana county court", "Indiana
   Circuit Court", "Indiana judicial district".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

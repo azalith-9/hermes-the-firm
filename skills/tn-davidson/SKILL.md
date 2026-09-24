@@ -15,7 +15,7 @@ description: >
   government structure; Chancery e-filing via eFileTN/Odyssey (Tyler);
   and the local rules of practice published by the Davidson County
   clerks. Layer on top of `tn-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

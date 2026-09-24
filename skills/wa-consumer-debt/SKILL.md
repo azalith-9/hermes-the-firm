@@ -25,7 +25,7 @@ description: >
   wa-law-references (civil rules, evidence rules, fees-and-costs,
   local rules, online sources), wa-statewide-format, wa-kcdc, and
   wa-pro-se.
-version: 0.3.1
+version: 0.4.0
 ---
 
 <!--

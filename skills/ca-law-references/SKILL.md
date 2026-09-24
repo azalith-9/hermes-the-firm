@@ -36,7 +36,7 @@ description: >
   ca-consumer-debt). Compose with ca-statewide-format,
   ca-lasc / ca-sfsc / ca-county-courts, ca-pro-se, and
   ca-fact-check as needed.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

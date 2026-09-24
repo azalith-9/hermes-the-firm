@@ -34,7 +34,7 @@ description: >
   workers'-compensation exclusive remedy at § 50-6-108 with post-
   7/1/14 adjudication routed to the Court of Workers' Compensation
   Claims under § 50-6-237.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

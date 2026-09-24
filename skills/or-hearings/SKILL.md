@@ -9,7 +9,7 @@ description: >
   for an Oregon hearing. Covers UTCR 5.050 oral argument
   conventions and per-county quirks for Multnomah, Washington,
   Clackamas, Lane, Marion, and other circuit courts.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

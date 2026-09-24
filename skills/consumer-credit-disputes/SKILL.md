@@ -29,7 +29,7 @@ description: >
   consumer-report-ordering, consumer-report-accuracy,
   consumer-harm-documentation, consumer-credit-monitoring, the state
   *-consumer-debt bundles, and the state *-pro-se skills.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

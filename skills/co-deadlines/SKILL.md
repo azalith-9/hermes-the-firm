@@ -14,7 +14,7 @@ description: >
   under C.R.C.P. 6(a)(1)(C), and maps named rules (answer-due,
   discovery-response, motion-reply, SJ-motion, appeal, garnishment
   cycle, family-law 91-day waiting period) to days plus authority.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

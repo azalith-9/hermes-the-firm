@@ -14,7 +14,7 @@ description: >
   "Indiana post-hearing order", "submit order Indiana", "Marion
   proposed order to chambers", "Indiana order in Word format",
   "judgment entry after hearing Indiana".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -15,7 +15,7 @@ description: >
   TnCIS, or paper), the filing-fee question, the indigency / pauper's
   oath alternative, and the difference between filing and service of
   process under Tenn. R. Civ. P. 4 and 5.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

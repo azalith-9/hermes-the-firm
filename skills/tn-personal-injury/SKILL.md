@@ -33,7 +33,7 @@ description: >
   Tennessee Products Liability Act with its 10-year statute of
   repose, wrongful death under Tenn. Code Ann. § 20-5-106, and the
   Tennessee UM/UIM regime at § 56-7-1201.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

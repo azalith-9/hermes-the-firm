@@ -22,7 +22,7 @@ description: >
   local rules, its compulsory-arbitration limit, and its
   AZTurboCourt e-filing status before relying on any specific.
   Layer on top of `az-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

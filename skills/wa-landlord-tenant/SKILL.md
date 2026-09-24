@@ -22,7 +22,7 @@ description: >
   "WA just cause eviction", "WA right to counsel", "WA
   eviction resolution program", "WA mobile home park
   eviction".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

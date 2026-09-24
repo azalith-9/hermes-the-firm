@@ -13,7 +13,7 @@ description: >
   disclosures, the proportionality scope, interrogatories, requests
   for production, requests for admission, depositions, meet-and-confer,
   and the motion-to-compel / sanctions workflow.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

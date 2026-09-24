@@ -9,7 +9,7 @@ description: >
   wage garnishment or bank levy, exempting property from
   collection, answering supplemental interrogatories, or filing a
   satisfaction of judgment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

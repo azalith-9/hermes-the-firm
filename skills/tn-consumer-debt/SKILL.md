@@ -23,7 +23,7 @@ description: >
   debt-buyer plaintiffs at Tenn. Code Ann. § 20-6-104, chain-of-title
   doctrine under Tennessee UCC Article 9, the SOL framework, and the
   General Sessions / de novo-appeal forum strategy.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

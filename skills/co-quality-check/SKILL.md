@@ -13,7 +13,7 @@ description: >
   conclusion offered), required-component completeness, packet
   consistency. Lighter touch than `co-fact-check` (which goes deep on
   evidentiary citations and sworn-vs-argued alignment).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

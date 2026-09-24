@@ -15,7 +15,7 @@ description: >
   judge signs an order. Composes with `mi-statewide-format` for the
   caption, `mi-draft-motion` for the underlying motion, and
   `mi-submit-order` for the transmittal workflow.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

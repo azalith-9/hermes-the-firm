@@ -29,7 +29,7 @@ description: >
   Act** (CPLR 214-j, 2022) revival windows for sexual-
   abuse claims, and the bill-of-particulars practice unique
   to NY personal-injury practice.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

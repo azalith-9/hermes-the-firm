@@ -2,7 +2,7 @@
 name: oh-county-courts
 description: >
   Use when filing in an Ohio Court of Common Pleas other than the 8 flagship counties (Cuyahoga, Franklin, Hamilton, Summit, Montgomery, Lucas, Stark, Butler). Triggers include any other Ohio county's Common Pleas name (Mahoning / Youngstown, Warren, Lake, Lorain, Trumbull, Clark, Greene, etc.). Layers on top of `oh-statewide-format` with the common-denominator Loc. R. patterns across Ohio's 88 county Courts of Common Pleas.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

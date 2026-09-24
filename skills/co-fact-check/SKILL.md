@@ -13,7 +13,7 @@ description: >
   declaration + proposed order + certificate of service; (4) sworn-
   versus-argued consistency between declaration assertions and
   motion arguments.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

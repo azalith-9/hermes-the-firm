@@ -167,6 +167,27 @@ def test_all_sources_represented():
     assert len([v for v in owners.values() if "/" not in v]) >= 159
 
 
+def test_skill_versions_match_plugin_version():
+    """Any SKILL.md that carries a version: field must state the plugin's
+    own version (plugin.yaml) — the port shipped 282 inherited upstream
+    values across twelve different numbers, which read as version drift.
+    Skills without the field are fine: it's optional documentation."""
+    import re
+    import yaml
+    plugin = yaml.safe_load((HERE / "plugin.yaml").read_text(encoding="utf-8"))
+    expected = str(plugin["version"])
+    bad = []
+    for md in sorted(SKILLS.glob("*/SKILL.md")):
+        text = md.read_text(encoding="utf-8")
+        m = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
+        if not m:
+            continue
+        vm = re.search(r"(?m)^version:\s*(\S+)", m.group(1))
+        if vm and vm.group(1) != expected:
+            bad.append(f"{md.parent.name}: {vm.group(1)} != {expected}")
+    assert not bad, "\n".join(bad)
+
+
 def test_drill_commands_cover_every_owner():
     """The /firm-* command family is what makes the areas selectable in
     the slash popover — it must expose every owner in owner-map.json,

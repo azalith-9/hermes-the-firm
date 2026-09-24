@@ -15,7 +15,7 @@ description: >
   County *District* Court (limited jurisdiction, ≤ $100,000) use the
   `wa-kcdc` skill; for other counties' superior/district courts use
   `wa-county-courts`. Layer on top of the `wa-statewide-format` skill.
-version: 0.2.1
+version: 0.4.0
 ---
 
 <!--

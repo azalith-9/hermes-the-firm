@@ -10,7 +10,7 @@ description: >
   signs). Composes with `wa-statewide-format` (always) and `wa-kcdc`
   (if KCDC). For post-hearing signed-order submission with bench
   modifications applied, use `wa-submit-order` instead.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

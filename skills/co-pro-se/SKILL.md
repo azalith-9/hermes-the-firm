@@ -12,7 +12,7 @@ description: >
   particular pro se conventions (no attorney-registration number,
   "Self-Represented" or "Pro Se" designation, sworn-financial-
   statement requirement under C.R.C.P. 16.2 for domestic cases).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

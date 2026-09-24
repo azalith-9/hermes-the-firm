@@ -28,7 +28,7 @@ description: >
   expert qualifications under MCL 600.2169) with the non-economic
   caps at MCL 600.1483, wrongful death under MCL 600.2922, and
   governmental immunity under the GTLA at MCL 691.1401 et seq.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

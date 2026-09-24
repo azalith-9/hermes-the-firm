@@ -18,7 +18,7 @@ description: >
   defense and L&T forum in Nassau County. NOT a substitute
   for Nassau Supreme Court (`ny-nassau`); the District Court
   is a separate court with its own filing system.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

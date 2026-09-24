@@ -36,7 +36,7 @@ description: >
   ca-pro-se, ca-law-references, ca-discovery, ca-first-30-days,
   ca-fact-check, ca-deadlines, ca-post-judgment, and all
   draft-* skills).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

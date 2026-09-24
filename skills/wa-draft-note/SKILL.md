@@ -10,7 +10,7 @@ description: >
   automatically (cause number matches `\d{2}CIV\d{6}KCX`), and
   produces the KCDC variant when appropriate. Composes with
   `wa-statewide-format` (always) and `wa-kcdc` (if KCDC).
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

@@ -32,7 +32,7 @@ description: >
   600.2919a), MCR 2.112(B)(1) fraud-with-particularity pleading, and
   the Michigan Uniform Arbitration Act at MCL 691.1681 et seq. plus
   FAA preemption practice.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

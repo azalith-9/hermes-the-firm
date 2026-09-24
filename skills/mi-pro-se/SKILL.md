@@ -15,7 +15,7 @@ description: >
   1.111 and ADA accommodations, the SCAO approved-forms ecosystem, and
   Michigan Legal Help self-help resources. Composes with
   `mi-statewide-format`, `mi-draft-motion`, and the venue skills.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

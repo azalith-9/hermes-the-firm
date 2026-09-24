@@ -14,7 +14,7 @@ description: >
   22 NYCRR § 202.8-b page limits (25 pages memo / 15 pages
   reply), CPLR 2214 timing, and the assigned Justice's Part
   Rules.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

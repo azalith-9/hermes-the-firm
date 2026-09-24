@@ -14,7 +14,7 @@ description: >
   MCR 2.107. Composes with `mi-statewide-format` for the caption,
   `mi-schedule-hearing` for obtaining the hearing date, and
   `mi-draft-motion` for the underlying motion.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

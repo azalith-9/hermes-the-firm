@@ -34,7 +34,7 @@ description: >
   conspiracy; conversion), the **Tennessee Uniform Arbitration Act**
   at § 29-5-301 et seq. plus FAA preemption practice, and the
   Tennessee Securities Act at § 48-1-101 et seq.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

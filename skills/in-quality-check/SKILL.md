@@ -15,7 +15,7 @@ description: >
   Trigger phrases: "QC Indiana filing", "Indiana pre-filing
   review", "T.R. 5(E) compliance", "Indiana brief audit", "QC
   before Odyssey upload".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

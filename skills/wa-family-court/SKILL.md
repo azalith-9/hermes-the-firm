@@ -31,7 +31,7 @@ description: >
   family court commissioner", "King County Family Law",
   "Pierce County Family Law", "WA family-law local
   rules".
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

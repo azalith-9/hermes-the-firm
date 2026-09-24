@@ -31,7 +31,7 @@ description: >
   reasonableness under MARA at MCL 445.774a, and the workers'-
   compensation exclusive remedy with the intentional-tort exception
   at MCL 418.131.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -9,7 +9,7 @@ description: >
   numbered paragraphs, line-numbered pleading paper, signature blocks,
   exhibit lists and cover pages, and citation format per the Washington
   Reporter of Decisions.
-version: 0.3.2
+version: 0.4.0
 ---
 
 <!--

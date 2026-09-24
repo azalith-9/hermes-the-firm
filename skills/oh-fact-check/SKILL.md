@@ -2,7 +2,7 @@
 name: oh-fact-check
 description: >
   Use to verify citations in Ohio filings — Civ. R., Evid. R., R.C., case citations in Ohio public-domain format. Triggers include 'verify Ohio citation', 'check Ohio R.C.', 'Ohio public-domain citation YYYY-Ohio-NNNN', 'Ohio case citation format', 'verify Ohio rule', 'spot-check Ohio filing'. Four-pass framework: (1) citation verification against authoritative sources; (2) internal-consistency check; (3) packet-consistency check; (4) sworn-vs-argued alignment.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

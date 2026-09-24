@@ -2,7 +2,7 @@
 name: oh-discovery
 description: >
   Use for Ohio discovery practice — interrogatories, RFPs, RFAs, depositions, meet-and-confer, motions to compel. Triggers include 'Ohio Civ. R. 33 interrogatories', 'Ohio Civ. R. 34 production', 'Ohio Civ. R. 36 admissions', 'Ohio Civ. R. 30 deposition', 'Ohio motion to compel Civ. R. 37', 'Ohio meet and confer'. Covers the Ohio Civ. R. discovery framework (closely tracks FRCP), the 40-interrogatory presumptive cap, the chain-of-title-targeted RFPs for consumer-debt defense, deposition mechanics under Civ. R. 30, and Civ. R. 37 motion-to-compel practice.
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--

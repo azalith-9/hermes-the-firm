@@ -19,7 +19,7 @@ description: >
   (chain-of-title RFPs, consumer-debt RFAs) live with ca-consumer-debt.
   Compose with ca-statewide-format, ca-pro-se, ca-law-references,
   ca-draft-motion, and ca-fact-check.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

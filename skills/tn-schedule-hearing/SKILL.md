@@ -15,7 +15,7 @@ description: >
   Hearing, while General Sessions runs a periodic civil docket /
   return date. This skill drafts the contact email or call log and
   the Notice of Hearing, and gives per-flagship-county routing notes.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -14,7 +14,7 @@ description: >
   MCR 2.602(B) entry paths — the (B)(3) 7-day rule and the
   (B)(4) stipulated / approved-as-to-form path — plus the
   transmittal cover and the 7-day-rule service plan.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

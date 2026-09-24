@@ -13,7 +13,7 @@ description: >
   `or-wccc` / `or-county-courts` (court-specific), `or-pro-se`
   (if pro se), and `or-discovery` / `or-post-judgment` depending
   on the motion type.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

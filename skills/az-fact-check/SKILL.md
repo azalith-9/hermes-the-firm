@@ -14,7 +14,7 @@ description: >
   Procedure; cases in Arizona/Bluebook form — Ariz. / Ariz. App. /
   P.2d / P.3d — via CourtListener); (2) internal consistency; (3)
   packet consistency; (4) sworn-versus-argued consistency.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

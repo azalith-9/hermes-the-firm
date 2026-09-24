@@ -14,7 +14,7 @@ description: >
   Washington County (Oregon) use `or-wccc`. Layer on top of
   `or-statewide-format`, and consult `or-law-references` for the
   per-court SLR text.
-version: 0.1.1
+version: 0.4.0
 ---
 
 <!--

@@ -12,7 +12,7 @@ description: >
   call log appropriate to the assigned judge's practice (chambers
   email, JA scheduling email, division clerk call), and explains the
   court-driven scheduling rhythm.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -14,7 +14,7 @@ description: >
   `wa-kcdc` skill instead. Layer this on top of `wa-statewide-format`, and
   consult `wa-law-references` for the per-court LCR / LCRLJ local-rule
   text.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

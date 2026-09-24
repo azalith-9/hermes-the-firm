@@ -13,7 +13,7 @@ description: >
   decline to rule. Trigger phrases: "Indiana proposed order",
   "Indiana order granting", "Marion CPC proposed order", "Indiana
   agreed order", "Indiana judgment proposed order".
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

@@ -19,7 +19,7 @@ description: >
   numbered and organized, and how to find the controlling
   district court plus its local administrative orders and MiFILE
   e-filing status. Layer on top of `mi-statewide-format`.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

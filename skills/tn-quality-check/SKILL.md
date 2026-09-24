@@ -16,7 +16,7 @@ description: >
   offered), required-component completeness, packet consistency.
   Lighter touch than `tn-fact-check` (which goes deep on evidentiary
   citations and sworn-versus-argued alignment).
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

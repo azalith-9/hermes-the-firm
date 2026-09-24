@@ -1,7 +1,7 @@
 ---
 name: version-diff
 description: Produce a clause-level changelog across multiple versions of the same legal document. Identify which counterparty made which changes, flag substantive modifications, distinguish style edits from substance. Auto-invokes when the user mentions multiple versions, redlines, version comparison, "what changed between drafts," or points at a folder containing versioned files.
-version: 1.0.0
+version: 0.4.0
 ---
 
 <!--

@@ -13,7 +13,7 @@ description: >
   enforcement of money judgments (garnishment, execution, judgment
   liens, creditor's examination, installment orders), the MCL 600.6023
   exemption framework, and satisfaction of judgment.
-version: 0.1.0
+version: 0.4.0
 ---
 
 <!--

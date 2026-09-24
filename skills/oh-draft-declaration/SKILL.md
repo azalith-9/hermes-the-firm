@@ -2,7 +2,7 @@
 name: oh-draft-declaration
 description: >
   Use to draft an Ohio affidavit. Triggers include 'Ohio affidavit', 'R.C. 2319.04 affidavit', 'Ohio Civ. R. 56 affidavit', 'verify Ohio affidavit', 'Ohio affidavit format'. Produces a properly-formatted Ohio affidavit conforming to R.C. 2319.04 and Civ. R. 56(C). **Skill name is 'declaration' for filename consistency across the marketplace; the output is an Ohio affidavit, not a federal-style declaration under 28 U.S.C. § 1746.**
-version: 0.2.0
+version: 0.4.0
 ---
 
 <!--
