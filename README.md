@@ -3,7 +3,7 @@
 
 ![Hermes: The Firm — a law library where one terminal actually read the books](assets/hero.jpg)
 
-![status](https://img.shields.io/badge/tests-16%2F16-brightgreen) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C432-orange)
+![CI](https://github.com/azalith-9/hermes-the-firm/actions/workflows/ci.yml/badge.svg) ![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![skills](https://img.shields.io/badge/skills-1%2C432-orange)
 
 > **NOT LEGAL ADVICE.** These plugins are a drafting aid for self-represented litigants and the practitioners who help them. They produce document drafts and procedural information; they do **not** provide legal advice, do **not** select a legal strategy for any particular user, and do **not** create an attorney-client relationship. The user is the decision-maker on every choice — what motion to file, what defense to plead, what facts to swear to, whether to settle, whether to appeal. For complex matters, or matters with substantial sums at stake, consider consulting a licensed attorney in your jurisdiction. Verify every rule, deadline, dollar threshold, and statutory citation against current law before filing.
 

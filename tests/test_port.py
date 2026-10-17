@@ -167,6 +167,23 @@ def test_all_sources_represented():
     assert len([v for v in owners.values() if "/" not in v]) >= 159
 
 
+def test_upstream_doc_names_every_source():
+    """UPSTREAM.md is the provenance doc — it must name all six upstream
+    layers plugin.yaml rolls in. It shipped describing the pre-roll
+    three-source shape (and a 'nine states' count for ten states); this
+    makes that class of drift a test failure."""
+    doc = (HERE / "UPSTREAM.md").read_text(encoding="utf-8")
+    for source in (
+        "anthropics/claude-for-legal",
+        "beshkenadze/us-legal-tools",
+        "vaquill/open-us-law",
+        "haqq-ai/master-claude-for-legal",
+        "haqq-ai/mini-claude-for-legal",
+        "codearranger/claude-legal",
+    ):
+        assert source in doc, f"UPSTREAM.md does not name {source}"
+
+
 def test_skill_versions_match_plugin_version():
     """Any SKILL.md that carries a version: field must state the plugin's
     own version (plugin.yaml) — the port shipped 282 inherited upstream

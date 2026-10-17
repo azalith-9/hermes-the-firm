@@ -62,7 +62,7 @@ projects. Each skill carries an HTML port note naming its provenance;
   `us-oh-legal-corpus`, `us-or-legal-corpus`, `us-tn-legal-corpus`,
   `us-wa-legal-corpus`, and `us-federal-debt-corpus` (skills only).
 - License: MIT
-- Contributes: a per-state civil-practice layer for **nine states** plus a
+- Contributes: a per-state civil-practice layer for **ten states** plus a
   federal consumer-credit layer:
   - Michigan (29 `mi-*`), Arizona (28 `az-*`), California (21 `ca-*`),
     Colorado (22 `co-*`), Indiana (23 `in-*`), New York (35 `ny-*`),
