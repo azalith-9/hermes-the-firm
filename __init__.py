@@ -1,12 +1,13 @@
 """hermes-the-firm plugin entry point.
 
-Opt-in by design: plugin skills cost zero tokens until
-skill_view("hermes-the-firm:<name>") is called, so nothing loads at
-session start. /hermes-the-firm is the front door (roster), and the
-/firm-* command family registers every drill target as its own slash
-command so the areas are selectable from the composer's menu. No
-lifecycle hooks; there is no process gate to enforce here, only
-domain knowledge and a practice-profile config to read.
+Every registered skill costs one <available_skills> index line in each
+session's system prompt (~44 bytes: the qualified name). Descriptions
+are deliberately NOT registered: Hermes ships a non-empty registered
+description verbatim and untruncated into every session prompt
+(agent/prompt_builder.py _plugin_skill_prompt_rows), and this plugin's
+old placeholder ("legal practice skill: <name>") paid full-description
+price for zero routing signal. The area-prefixed names carry the
+signal; /hermes-the-firm and the /firm-* command family route.
 """
 import logging
 from pathlib import Path
@@ -51,6 +52,6 @@ def register(ctx):
         for d in sorted(skills_dir.iterdir()):
             md = d / "SKILL.md"
             if md.is_file():
-                _safe(lambda d=d, md=md: ctx.register_skill(
-                    d.name, md,
-                    description=f"legal practice skill: {d.name}"))
+                # No description kwarg: a registered description ships
+                # verbatim and untruncated into every session prompt.
+                _safe(lambda d=d, md=md: ctx.register_skill(d.name, md))
